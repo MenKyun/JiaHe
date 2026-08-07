@@ -81,6 +81,12 @@ const clearFormButton = document.querySelector("#clear-form");
 const resetButton = document.querySelector("#reset-products");
 const exportButton = document.querySelector("#export-products");
 const importInput = document.querySelector("#import-products");
+const productSearchInput = document.querySelector("#admin-product-search");
+const categoryFilter = document.querySelector("#admin-category-filter");
+const clearFiltersButton = document.querySelector("#admin-clear-filters");
+const addProductButton = document.querySelector("#admin-add-product");
+const editorStatus = document.querySelector("#editor-status");
+const productEditorPanel = document.querySelector("#product-editor-panel");
 
 const fields = {
   id: document.querySelector("#product-id"),
@@ -486,6 +492,10 @@ function resetForm() {
   videoInput.value = "";
   videoUrlInput.value = "";
   formTitle.textContent = "新增商品";
+  if (editorStatus) {
+    editorStatus.textContent = "Draft";
+    editorStatus.classList.remove("is-editing");
+  }
   renderMainImagePreview();
   renderDetailImagePreview();
   renderVideoPreview();
@@ -534,11 +544,15 @@ function fillForm(product) {
   pendingVariants = [...normalizedProduct.variants];
   videoUrlInput.value = urlVideo ? urlVideo.src : "";
   formTitle.textContent = "編輯商品";
+  if (editorStatus) {
+    editorStatus.textContent = normalizedProduct.id;
+    editorStatus.classList.add("is-editing");
+  }
   renderMainImagePreview();
   renderDetailImagePreview();
   renderVideoPreview();
   renderVariantEditor();
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  productEditorPanel?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function deleteProduct(productId) {
@@ -552,23 +566,62 @@ function deleteProduct(productId) {
   saveProducts();
   renderProductList();
   resetForm();
+  updateDashboardKPIs();
+}
+
+function syncCategoryFilterOptions() {
+  if (!categoryFilter) return;
+
+  const selected = categoryFilter.value;
+  const categories = [...new Set(products.map((product) => normalizeProduct(product).category).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b, "zh-Hant"));
+
+  categoryFilter.innerHTML = `
+    <option value="">全部分類</option>
+    ${categories.map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`).join("")}
+  `;
+  categoryFilter.value = categories.includes(selected) ? selected : "";
+}
+
+function getFilteredProducts() {
+  const keyword = productSearchInput?.value.trim().toLocaleLowerCase("zh-Hant") || "";
+  const category = categoryFilter?.value || "";
+
+  return products.filter((product) => {
+    const normalizedProduct = normalizeProduct(product);
+    const searchText = [
+      normalizedProduct.name,
+      normalizedProduct.brand,
+      normalizedProduct.category,
+      normalizedProduct.id,
+      ...normalizedProduct.variants.flatMap((variant) => [variant.sku, variant.name, variant.value])
+    ].join(" ").toLocaleLowerCase("zh-Hant");
+
+    return (!keyword || searchText.includes(keyword))
+      && (!category || normalizedProduct.category === category);
+  });
 }
 
 function renderProductList() {
-  adminSummary.textContent = `目前 ${products.length} 件商品`;
+  syncCategoryFilterOptions();
+  const visibleProducts = getFilteredProducts();
+  adminSummary.textContent = visibleProducts.length === products.length
+    ? `目前 ${products.length} 件商品`
+    : `顯示 ${visibleProducts.length} / ${products.length} 件`;
 
-  if (!products.length) {
+  if (!visibleProducts.length) {
     productList.innerHTML = `
-      <tr>
-        <td colspan="5">目前沒有商品，請先新增一筆。</td>
+      <tr class="admin-empty-row">
+        <td colspan="5">${products.length ? "找不到符合條件的商品，請調整搜尋或分類。" : "目前沒有商品，請先新增一筆。"}</td>
       </tr>
     `;
     return;
   }
 
-  productList.innerHTML = products.map((product) => {
+  productList.innerHTML = visibleProducts.map((product) => {
     const normalizedProduct = normalizeProduct(product);
     const coverImage = normalizedProduct.images[0] || normalizedProduct.variants.find((variant) => variant.image)?.image;
+    const discountedSkuCount = normalizedProduct.variants.filter((variant) => normalizeDiscount(variant.discount) > 0).length;
 
     return `
       <tr>
@@ -587,7 +640,15 @@ function renderProductList() {
         </td>
         <td>${escapeHtml(normalizedProduct.category)}</td>
         <td>${formatCurrency(getDisplayPrice(normalizedProduct))}</td>
-        <td>${normalizedProduct.images.length} 主圖 / ${normalizedProduct.detailImages.length} 詳情圖 / ${normalizedProduct.videos.length} 影片 / ${normalizedProduct.variants.length} 規格</td>
+        <td>
+          <div class="admin-media-counts">
+            <span>${normalizedProduct.images.length} 主圖</span>
+            <span>${normalizedProduct.detailImages.length} 詳情</span>
+            <span>${normalizedProduct.videos.length} 影片</span>
+            <span>${normalizedProduct.variants.length} SKU</span>
+          </div>
+          ${discountedSkuCount ? `<span class="admin-discount-chip">${discountedSkuCount} 個折扣中</span>` : ""}
+        </td>
         <td>
           <div class="table-actions">
             <a href="product.html?id=${encodeURIComponent(normalizedProduct.id)}">預覽</a>
@@ -628,6 +689,7 @@ function importProducts(file) {
       saveProducts();
       renderProductList();
       resetForm();
+      updateDashboardKPIs();
       showNotice("商品資料已匯入。", "success");
     } catch (error) {
       showNotice("JSON 解析失敗，請確認檔案內容。", "error");
@@ -774,6 +836,8 @@ form.addEventListener("submit", (event) => {
   saveProducts();
   renderProductList();
   resetForm();
+  updateDashboardKPIs();
+  showNotice(existingIndex >= 0 ? "商品資料已更新。" : "新商品已加入目錄。", "success");
 });
 
 productList.addEventListener("click", (event) => {
@@ -787,24 +851,32 @@ productList.addEventListener("click", (event) => {
 
 clearFormButton.addEventListener("click", resetForm);
 
+productSearchInput?.addEventListener("input", renderProductList);
+categoryFilter?.addEventListener("change", renderProductList);
+clearFiltersButton?.addEventListener("click", () => {
+  productSearchInput.value = "";
+  categoryFilter.value = "";
+  renderProductList();
+  productSearchInput.focus();
+});
+
 resetButton.addEventListener("click", () => {
   const confirmed = confirm("確定要還原預設商品嗎？目前自訂商品會被覆蓋。");
   if (!confirmed) return;
 
-  products = defaultProducts.map(normalizeProduct);
+  const sourceProducts = Array.isArray(window.trImportedProducts) && window.trImportedProducts.length
+    ? window.trImportedProducts
+    : defaultProducts;
+  products = sourceProducts.map(normalizeProduct);
   saveProducts();
   renderProductList();
   resetForm();
+  updateDashboardKPIs();
+  showNotice("已還原預設商品。", "success");
 });
 
 exportButton.addEventListener("click", exportProducts);
 importInput.addEventListener("change", () => importProducts(importInput.files[0]));
-
-renderProductList();
-renderMainImagePreview();
-renderDetailImagePreview();
-renderVideoPreview();
-renderVariantEditor();
 
 // --- V2 Extensions: SaaS Dashboard Tabs, SVG Charts & Orders Management ---
 const ordersStorageKey = "tr_orders_v1";
@@ -835,26 +907,42 @@ function initAdminTabs() {
   const tabDesc = document.querySelector("#tab-desc");
 
   const titles = {
-    dashboard: { title: "儀表板概覽", desc: "即時掌握商店銷售狀況、庫存資產與熱銷品類。" },
-    products: { title: "商品管理工作台", desc: "集中管理商品資料、媒體、SKU 折扣、價格與外部購買連結。" },
-    orders: { title: "訂單履約中心", desc: "查看前台顧客訂單，管理發貨狀態與履約流程。" },
-    analytics: { title: "數據分析與備份", desc: "數據導出備份與原廠資料恢復。" }
+    dashboard: { title: "營運總覽", desc: "掌握商品狀態、目錄結構與近期履約概況。" },
+    products: { title: "商品管理", desc: "編輯商品資料、媒體內容、SKU 規格與折扣。" },
+    orders: { title: "訂單履約", desc: "查看示範訂單並更新每筆訂單的履約狀態。" },
+    analytics: { title: "資料與備份", desc: "匯出商品資料、跨瀏覽器還原，或重設預設目錄。" }
   };
+
+  function activateTab(targetTab) {
+    tabButtons.forEach(button => {
+      const isMatchingNav = button.closest(".admin-nav-item") && button.dataset.adminTab === targetTab;
+      button.classList.toggle("is-active", Boolean(isMatchingNav));
+    });
+    tabContents.forEach(content => {
+      content.hidden = content.id !== `tab-content-${targetTab}`;
+    });
+
+    if (titles[targetTab]) {
+      tabTitle.textContent = titles[targetTab].title;
+      tabDesc.textContent = titles[targetTab].desc;
+    }
+
+    if (targetTab === "dashboard") updateDashboardKPIs();
+    if (targetTab === "orders") renderOrdersList();
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }
 
   tabButtons.forEach(button => {
     button.addEventListener("click", () => {
-      const targetTab = button.dataset.adminTab;
-      tabButtons.forEach(b => b.classList.toggle("is-active", b === button));
-      tabContents.forEach(c => c.hidden = c.id !== `tab-content-${targetTab}`);
-
-      if (titles[targetTab]) {
-        tabTitle.textContent = titles[targetTab].title;
-        tabDesc.textContent = titles[targetTab].desc;
-      }
-
-      if (targetTab === "dashboard") updateDashboardKPIs();
-      if (targetTab === "orders") renderOrdersList();
+      activateTab(button.dataset.adminTab);
     });
+  });
+
+  addProductButton?.addEventListener("click", () => {
+    activateTab("products");
+    resetForm();
+    requestAnimationFrame(() => productEditorPanel?.scrollIntoView({ behavior: "smooth", block: "start" }));
+    setTimeout(() => fields.name.focus(), 280);
   });
 }
 
@@ -893,9 +981,9 @@ function renderSalesChart() {
   box.innerHTML = data.map((val, i) => {
     const heightPct = Math.round((val / max) * 100);
     return `
-      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: flex-end;">
-        <div style="width: 100%; max-width: 18px; height: ${heightPct}%; background: ${i === data.length - 1 ? "var(--brand)" : "#242b3b"}; border-radius: 4px; transition: height 0.4s ease;" title="NT$ ${val}"></div>
-        <span style="font-size: 9px; color: #64748b;">8/${i + 1}</span>
+      <div class="admin-bar-column">
+        <div class="admin-bar${i === data.length - 1 ? " is-latest" : ""}" style="height: ${heightPct}%" title="NT$ ${val}"></div>
+        <span>8/${i + 1}</span>
       </div>
     `;
   }).join("");
@@ -911,23 +999,23 @@ function renderCategoryChart() {
     counts[cat] = (counts[cat] || 0) + 1;
   });
 
-  const colors = ["#d7ff3f", "#60a5fa", "#c084fc", "#4ade80", "#f59e0b"];
+  const colors = ["#11130f", "#6e765f", "#a6b17f", "#c5ccab", "#d7ff3f"];
   const categories = Object.keys(counts);
   const total = products.length || 1;
 
   box.innerHTML = `
-    <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
+    <div class="admin-category-list">
       ${categories.map((cat, i) => {
         const pct = Math.round((counts[cat] / total) * 100);
         const color = colors[i % colors.length];
         return `
-          <div>
-            <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px;">
-              <span style="color: #f8fafc; font-weight: 600;">${escapeHtml(cat)}</span>
-              <span style="color: #94a3b8;">${counts[cat]} 件 (${pct}%)</span>
+          <div class="admin-category-row">
+            <div>
+              <span>${escapeHtml(cat)}</span>
+              <span>${counts[cat]} 件 · ${pct}%</span>
             </div>
-            <div style="height: 8px; background: #0f1115; border-radius: 99px; overflow: hidden;">
-              <div style="width: ${pct}%; height: 100%; background: ${color}; border-radius: 99px;"></div>
+            <div class="admin-category-track">
+              <div style="--category-width: ${pct}%; --category-color: ${color};"></div>
             </div>
           </div>
         `;
@@ -942,20 +1030,20 @@ function renderOrdersList() {
 
   const orders = getOrders();
   if (!orders.length) {
-    tbody.innerHTML = `<tr><td colspan="5" style="padding: 24px; text-align: center; color: #64748b;">目前尚無訂單記錄</td></tr>`;
+    tbody.innerHTML = `<tr class="admin-empty-row"><td colspan="5">目前尚無訂單記錄</td></tr>`;
     return;
   }
 
   tbody.innerHTML = orders.map((order, idx) => `
-    <tr style="border-bottom: 1px solid #242b3b;">
-      <td style="padding: 12px; font-weight: 700; color: #f8fafc;">${escapeHtml(order.id)}</td>
-      <td style="padding: 12px; color: #94a3b8; font-size: 12px;">${escapeHtml(order.date)}</td>
-      <td style="padding: 12px; color: #cbd5e1;">
+    <tr>
+      <td class="admin-order-id">${escapeHtml(order.id)}</td>
+      <td class="admin-order-date">${escapeHtml(order.date)}</td>
+      <td>
         ${order.items.map(i => `${escapeHtml(i.name)} × ${i.quantity}`).join(", ")}
       </td>
-      <td style="padding: 12px; font-weight: 700; color: var(--brand);">${formatCurrency(order.total)}</td>
-      <td style="padding: 12px;">
-        <select data-order-idx="${idx}" class="status-pill status-${order.status === "待處理" ? "pending" : order.status === "處理中" ? "processing" : order.status === "已發貨" ? "shipped" : "completed"}" style="background: #161922; border: 1px solid #242b3b; color: inherit; cursor: pointer;">
+      <td class="admin-order-total">${formatCurrency(order.total)}</td>
+      <td>
+        <select data-order-idx="${idx}" class="status-pill status-${order.status === "待處理" ? "pending" : order.status === "處理中" ? "processing" : order.status === "已發貨" ? "shipped" : "completed"}">
           <option value="待處理" ${order.status === "待處理" ? "selected" : ""}>待處理</option>
           <option value="處理中" ${order.status === "處理中" ? "selected" : ""}>處理中</option>
           <option value="已發貨" ${order.status === "已發貨" ? "selected" : ""}>已發貨</option>
@@ -969,6 +1057,14 @@ function renderOrdersList() {
     sel.addEventListener("change", (e) => {
       const idx = Number(e.target.dataset.orderIdx);
       orders[idx].status = e.target.value;
+      const statusClass = e.target.value === "待處理"
+        ? "pending"
+        : e.target.value === "處理中"
+          ? "processing"
+          : e.target.value === "已發貨"
+            ? "shipped"
+            : "completed";
+      e.target.className = `status-pill status-${statusClass}`;
       saveOrders(orders);
       showNotice(`訂單 ${orders[idx].id} 狀態已更新為「${e.target.value}」`, "success");
     });
@@ -976,4 +1072,9 @@ function renderOrdersList() {
 }
 
 initAdminTabs();
+renderProductList();
+renderMainImagePreview();
+renderDetailImagePreview();
+renderVideoPreview();
+renderVariantEditor();
 updateDashboardKPIs();
