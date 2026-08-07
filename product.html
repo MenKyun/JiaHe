@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="查看 TR SELECT 商品圖片、規格、價格與完整商品資訊。">
+  <meta name="theme-color" content="#101113">
+  <title>商品詳情 | TR SELECT</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="product-page">
+  <a class="skip-link" href="#product-detail">跳到商品內容</a>
+  <div class="promo-bar">
+    <span>Product file</span>
+    <strong>台北現貨 · 規格與圖片一一對應</strong>
+    <a href="index.html#products">回商品目錄</a>
+  </div>
+
+  <header class="site-header">
+    <div class="brand-row">
+      <a class="logo" href="index.html" aria-label="TR SELECT 首頁">
+        <span class="logo-mark">TR</span>
+        <span>
+          <strong>TR SELECT</strong>
+          <small>Objects for mobile life</small>
+        </span>
+      </a>
+      <nav class="product-top-nav" aria-label="商品頁導覽">
+        <a href="index.html">首頁</a>
+        <a href="index.html#categories">分類</a>
+        <a href="index.html#products">全部商品</a>
+        <button class="cart-trigger" id="wishlist-trigger-detail" type="button" style="margin-left: 8px;">
+          ❤️ 收藏 <span id="wishlist-count-detail">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <main class="product-detail-page" id="product-detail" aria-live="polite"></main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>TR SELECT</strong>
+      <p>為手機影像、直播和日常記錄挑選順手裝備。Taipei, Taiwan.</p>
+    </div>
+    <nav aria-label="頁尾導覽">
+      <a href="index.html">商城首頁</a>
+      <a href="index.html#categories">選品分類</a>
+      <a href="index.html#member">選物原則</a>
+    </nav>
+  </footer>
+
+  <script src="tr-products.js"></script>
+  <script src="catalog-labels.js"></script>
+  <script src="product.js"></script>
+</body>
+</html>

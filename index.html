@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TR SELECT 精選自拍棒、手機支架、補光燈與行動收音設備，規格清楚、台北現貨出貨。">
+  <meta name="theme-color" content="#101113">
+  <title>TR SELECT | 行動影像配件選物</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="storefront-page">
+  <a class="skip-link" href="#main-content">跳到主要內容</a>
+  <div class="promo-bar">
+    <span>NEW DROP</span>
+    <strong>180cm 落地自動開腳架現貨到站</strong>
+    <a href="#products">立即選購</a>
+  </div>
+
+  <header class="site-header">
+    <div class="utility-row">
+      <p>Creator gear · Taipei dispatch</p>
+      <nav aria-label="會員工具">
+        <a href="#member">選物原則</a>
+        <a href="#products">商品目錄</a>
+        <button class="cart-trigger" id="wishlist-trigger" type="button" style="margin-right: 8px;">
+          ❤️ 收藏 <span id="wishlist-count">0</span>
+        </button>
+        <button class="cart-trigger" id="cart-trigger-btn" type="button" aria-controls="cart-panel">
+          購物車 <span id="cart-count">0</span>
+        </button>
+      </nav>
+    </div>
+
+    <div class="brand-row">
+      <a class="logo" href="index.html" aria-label="TR SELECT 首頁">
+        <span class="logo-mark">TR</span>
+        <span>
+          <strong>TR SELECT</strong>
+          <small>Objects for mobile life</small>
+        </span>
+      </a>
+
+      <form class="search-box" id="search-form">
+        <label class="sr-only" for="search-input">搜尋商品</label>
+        <input id="search-input" type="search" autocomplete="off" placeholder="搜尋自拍棒、補光燈、麥克風">
+        <button type="submit">搜尋</button>
+      </form>
+    </div>
+
+    <nav class="category-nav" aria-label="商品分類">
+      <button type="button" class="category-button is-active" data-category="全部">全部商品</button>
+      <button type="button" class="category-button" data-category="手機周邊">手機周邊</button>
+      <button type="button" class="category-button" data-category="影音周邊">影音周邊</button>
+      <button type="button" class="category-button" data-category="季節家電">季節家電</button>
+      <button type="button" class="category-button" data-category="健康護理">健康護理</button>
+      <button type="button" class="category-button" data-category="居家生活">居家生活</button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero-cinematic" aria-labelledby="hero-title">
+      <div class="hero-showcase" id="hero-carousel" role="region" aria-roledescription="carousel" aria-label="首頁主視覺輪播">
+        <figure class="hero-slide is-active" data-slide-index="0">
+          <img src="assets/tripod-rooftop-hero-v2.jpg" alt="創作者在城市天台使用 TR 自動開腳架拍攝" fetchpriority="high">
+        </figure>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">TR Creator System / 2026</p>
+        <h1 id="hero-title">一支腳架，<br>打開更多視角。</h1>
+        <p class="hero-copy">落地自動開腳、180cm 延伸與藍牙遙控。從一個人的日常，到完整的創作現場，只需要幾秒。</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#products">立即選購</a>
+          <a class="secondary-link text-link" href="#deals">探索產品 <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-trust-bar">
+          <span class="trust-pill">⚡ 台北現貨 24h 出貨</span>
+          <span class="trust-pill">⭐️ 4.9/5 創作者好評</span>
+          <span class="trust-pill">🛡️ 1 年原廠保固</span>
+        </div>
+        <ul class="hero-specs" aria-label="主推商品特色">
+          <li><strong>180</strong><span>CM 最高高度</span></li>
+          <li><strong>10</strong><span>M 藍牙遙控</span></li>
+          <li><strong>360°</strong><span>橫直自由旋轉</span></li>
+        </ul>
+      </div>
+      <aside class="hero-feature-note" aria-label="主推商品摘要">
+        <div class="deal-card main-deal">
+          <span>Featured / TUT160</span>
+          <strong>丟丟自拍腳架</strong>
+          <em>落地即開，拿起即拍</em>
+        </div>
+        <div class="deal-card mini-deal">
+          <span>From</span>
+          <strong>NT$978</strong>
+          <em>台北現貨</em>
+        </div>
+      </aside>
+      <div class="hero-carousel-controls" id="hero-carousel-controls" hidden>
+        <button type="button" data-carousel-action="previous" aria-label="上一張主視覺">←</button>
+        <div class="hero-carousel-dots" role="tablist" aria-label="選擇主視覺"></div>
+        <button type="button" data-carousel-action="next" aria-label="下一張主視覺">→</button>
+      </div>
+      <p class="sr-only" id="hero-carousel-status" aria-live="polite"></p>
+      <a class="hero-scroll" href="#deals">Scroll to explore <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="service-strip" aria-label="服務優勢">
+      <article>
+        <strong>原廠保固</strong>
+        <span>訂單與保固資料可追蹤</span>
+      </article>
+      <article>
+        <strong>多元支付</strong>
+        <span>支援信用卡、轉帳與貨到付款</span>
+      </article>
+      <article>
+        <strong>快速出貨</strong>
+        <span>熱門現貨 24 小時內處理</span>
+      </article>
+      <article>
+        <strong>會員積分</strong>
+        <span>消費累計，可折抵後續訂單</span>
+      </article>
+    </section>
+
+    <section class="campaign-band" id="deals" aria-labelledby="campaign-title">
+      <div class="campaign-copy">
+        <span class="campaign-number" aria-hidden="true">01</span>
+        <p class="eyebrow">Drop &amp; shoot</p>
+        <h2 id="campaign-title">落地，<br>自動打開。</h2>
+        <p>隱藏式腳架在接觸地面時自動展開，收起後依然是一支俐落的自拍棒。少一步調整，多一個不會錯過的畫面。</p>
+        <a href="#products">查看丟丟系列 <span aria-hidden="true">→</span></a>
+      </div>
+      <figure class="campaign-visual">
+        <img src="assets/tripod-gesture-detail.jpg" alt="TR 自拍腳架隱藏式手機夾與伸縮結構特寫" loading="lazy">
+        <figcaption>One-piece hidden structure / TUT160</figcaption>
+      </figure>
+    </section>
+
+    <!-- High-Converting Flash Sale Band -->
+    <section class="flash-sale-band" aria-label="限時快閃特惠">
+      <div class="flash-sale-content">
+        <span class="eyebrow" style="color: var(--brand);">FLASH SALE / 限時閃促 85 折</span>
+        <h2>🔥 TUT160 旗艦大禮包 · 限時搶購</h2>
+        <p>包含 180cm 延伸腳架 + 藍牙遙控器 + 磁吸雙色補光燈，限量前 50 組贈專用收納包！</p>
+      </div>
+      <div class="countdown-box">
+        <div class="countdown-segment">
+          <span class="countdown-val" id="cd-hours">04</span>
+          <span class="countdown-lbl">小時</span>
+        </div>
+        <span class="countdown-colon">:</span>
+        <div class="countdown-segment">
+          <span class="countdown-val" id="cd-mins">28</span>
+          <span class="countdown-lbl">分鐘</span>
+        </div>
+        <span class="countdown-colon">:</span>
+        <div class="countdown-segment">
+          <span class="countdown-val" id="cd-secs">45</span>
+          <span class="countdown-lbl">秒</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="custom-blocks" id="custom-blocks" aria-label="自訂內容區塊" hidden></section>
+
+    <!-- Social Proof Reviews Section -->
+    <section class="reviews-section" aria-labelledby="reviews-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Social Proof / 4.9 Rating</p>
+          <h2 id="reviews-title">💬 創作者實測評價</h2>
+        </div>
+        <p>來自真實使用者的反饋，用過就回不去的順手體驗。</p>
+      </div>
+      <div class="reviews-grid">
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">「架設速度超快，一個人出外景拍短影音救星！自動展開非常穩定，比之前買的便宜腳架好太多了。」</p>
+          <div class="review-author">
+            <div class="author-avatar">林</div>
+            <div class="author-info">
+              <strong>@林*翰</strong>
+              <small>已驗證買家 · Vlog 創作者</small>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">「台北出貨隔天就收到！質感比想像中好很多，180cm 高度取景視角超棒，拍全身照完全不求人。」</p>
+          <div class="review-author">
+            <div class="author-avatar">陳</div>
+            <div class="author-info">
+              <strong>@陳*婷</strong>
+              <small>已驗證買家 · 美妝博主</small>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-quote">「麥克風收音非常清晰，自動降噪效果很好，風大戶外也收得很乾淨。真心推薦給需要收音的朋友。」</p>
+          <div class="review-author">
+            <div class="author-avatar">張</div>
+            <div class="author-info">
+              <strong>@張*豪</strong>
+              <small>已驗證買家 · 攝影師</small>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" id="categories" aria-labelledby="categories-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Use cases / 04</p>
+          <h2 id="categories-title">按使用場景找裝備</h2>
+        </div>
+        <p>不從複雜型號開始，從你要拍什麼開始。</p>
+      </div>
+      <div class="category-grid">
+        <article>
+          <span>01</span>
+          <strong>手機周邊</strong>
+          <p>快充、線材、支架、行動電源</p>
+        </article>
+        <article>
+          <span>02</span>
+          <strong>影音周邊</strong>
+          <p>耳機、音箱、麥克風、投影配件</p>
+        </article>
+        <article>
+          <span>03</span>
+          <strong>季節家電</strong>
+          <p>除濕、風扇、空氣循環與暖風</p>
+        </article>
+        <article>
+          <span>04</span>
+          <strong>健康護理</strong>
+          <p>刮鬍、按摩、口腔護理與美容工具</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" id="products" aria-labelledby="products-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Equipment index</p>
+          <h2 id="products-title">本期選品</h2>
+        </div>
+        <p id="result-summary">展示全部商品</p>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="product-load-more" id="product-load-more">
+        <button type="button" id="load-more-products">查看更多商品</button>
+      </div>
+    </section>
+
+    <!-- Lead Capture Newsletter Box -->
+    <section class="lead-capture-box" aria-label="訂閱優惠">
+      <h2>🎁 訂閱獲取首購 NT$100 折扣碼</h2>
+      <p>第一時間收到全新 Drop 限時優惠、台北庫存到貨通知與創作者裝備指南。</p>
+      <form class="lead-form" id="lead-capture-form">
+        <input type="email" required placeholder="請輸入您的 Email 地址">
+        <button type="submit">立即領取</button>
+      </form>
+    </section>
+
+    <section class="member-panel" id="member" aria-labelledby="member-title">
+      <div>
+        <p class="eyebrow">Made to move</p>
+        <h2 id="member-title">創作，不該被設備拖慢。</h2>
+        <p>每件裝備都圍繞一個動作：更快架好、更穩拍攝、更輕鬆收回。規格的價值，最後要落在你能不能順手完成一個畫面。</p>
+      </div>
+      <div class="member-stats">
+        <article>
+          <strong>26</strong>
+          <span>件在售選品</span>
+        </article>
+        <article>
+          <strong>24h</strong>
+          <span>工作日處理</span>
+        </article>
+        <article>
+          <strong>1:1</strong>
+          <span>規格對應實拍</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-panel" id="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" tabindex="-1">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">Your selection</p>
+        <h2 id="cart-title">購物車</h2>
+      </div>
+      <button class="icon-button" id="close-cart" type="button" aria-label="關閉購物車">×</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="empty-cart">購物車內目前沒有商品</p>
+    </div>
+    <div class="cart-footer">
+      <div>
+        <span>小計</span>
+        <strong id="cart-total">NT$0</strong>
+      </div>
+      <button type="button" id="checkout-button">前往結帳</button>
+      <p class="cart-status" id="cart-status" role="status" aria-live="polite"></p>
+    </div>
+  </aside>
+  <button class="cart-backdrop" id="cart-backdrop" type="button" aria-label="關閉購物車" tabindex="-1"></button>
+
+  <footer class="site-footer">
+    <div>
+      <strong>TR SELECT</strong>
+      <p>為手機影像、直播和日常記錄挑選順手裝備。Taipei, Taiwan.</p>
+    </div>
+    <nav aria-label="頁尾導覽">
+      <a href="visual-editor.html">前台可視化編輯</a>
+      <a href="admin.html">商品後台</a>
+      <a href="#categories">選品分類</a>
+      <a href="#products">商品目錄</a>
+      <a href="#member">選物原則</a>
+    </nav>
+  </footer>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Modal Backdrop & Window Containers -->
+  <div class="modal-backdrop" id="modal-backdrop"></div>
+
+  <div class="modal-container" id="quick-view-modal" role="dialog" aria-modal="true" tabindex="-1">
+    <button class="modal-close-btn" id="close-quick-view" type="button" aria-label="關閉">×</button>
+    <div class="quick-view-layout" id="quick-view-content"></div>
+  </div>
+
+  <div class="modal-container" id="checkout-modal" role="dialog" aria-modal="true" tabindex="-1">
+    <button class="modal-close-btn" id="close-checkout-modal" type="button" aria-label="關閉">×</button>
+    <div class="checkout-layout" id="checkout-modal-content"></div>
+  </div>
+
+  <script src="site-content.js"></script>
+  <script src="tr-products.js"></script>
+  <script src="catalog-labels.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

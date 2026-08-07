@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#161922">
+  <title>TR Studio SaaS 後台管理工作台 | TR SELECT</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-page" style="background: #0f1115; color: #e2e8f0;">
+  <a class="skip-link" href="#admin-main">跳到主要內容</a>
+
+  <div class="admin-saas-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="admin-sidebar">
+      <div class="admin-brand-box">
+        <div class="admin-brand-icon">TR</div>
+        <div>
+          <strong style="display: block; font-size: 15px; color: #f8fafc;">TR SELECT</strong>
+          <small style="color: #64748b; font-size: 11px;">Studio Dashboard v2</small>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="admin-nav-list">
+          <li class="admin-nav-item">
+            <button class="is-active" type="button" data-admin-tab="dashboard">
+              📊 儀表板概覽
+            </button>
+          </li>
+          <li class="admin-nav-item">
+            <button type="button" data-admin-tab="products">
+              📦 商品管理工作台 <span class="nav-badge" id="nav-product-count">0</span>
+            </button>
+          </li>
+          <li class="admin-nav-item">
+            <button type="button" data-admin-tab="orders">
+              📝 訂單履約管理 <span class="nav-badge" id="nav-order-count">0</span>
+            </button>
+          </li>
+          <li class="admin-nav-item">
+            <button type="button" data-admin-tab="analytics">
+              📈 數據分析與備份
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div style="margin-top: auto; display: grid; gap: 8px;">
+        <a class="secondary-link" href="index.html" style="text-align: center; background: rgba(255,255,255,0.05); border-color: #242b3b; color: #94a3b8;">
+          🌐 前往商店前台
+        </a>
+        <a class="secondary-link" href="visual-editor.html" style="text-align: center; background: rgba(255,255,255,0.05); border-color: #242b3b; color: #94a3b8;">
+          🎨 首頁 CMS 編輯器
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="admin-main-content" id="admin-main">
+      <!-- Top Bar -->
+      <header class="admin-top-bar">
+        <div class="admin-page-title">
+          <h1 id="tab-title">儀表板概覽</h1>
+          <p id="tab-desc">即時掌握商店銷售狀況、庫存資產與熱銷品類。</p>
+        </div>
+        <div style="display: flex; gap: 12px;">
+          <button class="secondary-link" id="reset-products" type="button" style="background: rgba(239,68,68,0.1); color: #f87171; border-color: rgba(239,68,68,0.2);">
+            還原原廠商品
+          </button>
+        </div>
+      </header>
+
+      <!-- TAB 1: DASHBOARD -->
+      <section class="admin-tab-content" id="tab-content-dashboard">
+        <!-- KPI Cards -->
+        <div class="admin-kpi-grid">
+          <div class="admin-kpi-card">
+            <span class="kpi-label">在售商品總數</span>
+            <span class="kpi-val" id="kpi-product-total">0</span>
+            <span class="kpi-sub">↑ 台北現貨即時同步</span>
+          </div>
+          <div class="admin-kpi-card">
+            <span class="kpi-label">目錄估算庫存總值</span>
+            <span class="kpi-val" id="kpi-catalog-value">NT$0</span>
+            <span class="kpi-sub">↑ 包含多 SKU 規格折算</span>
+          </div>
+          <div class="admin-kpi-card">
+            <span class="kpi-label">本月模擬訂單總數</span>
+            <span class="kpi-val" id="kpi-orders-count">0</span>
+            <span class="kpi-sub">↑ 履約完成率 98.4%</span>
+          </div>
+          <div class="admin-kpi-card">
+            <span class="kpi-label">平均選品單價</span>
+            <span class="kpi-val" id="kpi-avg-price">NT$0</span>
+            <span class="kpi-sub">↑ 行動影像核心配件</span>
+          </div>
+        </div>
+
+        <!-- SVG Visual Charts Row -->
+        <div class="admin-charts-row">
+          <div class="admin-card-panel">
+            <div class="admin-card-header">
+              <h3>📈 近 30 天模擬銷售額走勢</h3>
+              <small style="color: #64748b;">即時動態 SVG 渲染</small>
+            </div>
+            <div id="sales-chart-box" style="height: 240px; display: flex; align-items: flex-end; gap: 12px; padding: 20px 10px; background: #0f1115; border-radius: 12px;"></div>
+          </div>
+
+          <div class="admin-card-panel">
+            <div class="admin-card-header">
+              <h3>🍩 商品分類分佈占比</h3>
+            </div>
+            <div id="category-chart-box" style="height: 240px; display: grid; place-items: center;"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: PRODUCTS WORKBENCH -->
+      <section class="admin-tab-content" id="tab-content-products" hidden>
+        <div class="admin-layout" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 24px;">
+          <!-- Product Form Editor -->
+          <section class="admin-card-panel" style="background: #161922; padding: 24px;">
+            <div class="admin-card-header">
+              <h3>📝 新增 / 編輯商品</h3>
+            </div>
+            <form class="product-form" id="product-form">
+              <input id="product-id" type="hidden">
+
+              <label style="color: #cbd5e1;">
+                商品名稱
+                <input id="product-name" type="text" required placeholder="例：180cm 藍牙自拍腳架" style="background: #0f1115; border-color: #242b3b; color: #fff;">
+              </label>
+
+              <div class="form-grid">
+                <label style="color: #cbd5e1;">
+                  商品分類
+                  <select id="product-category" required style="background: #0f1115; border-color: #242b3b; color: #fff;">
+                    <option value="自拍腳架">自拍腳架</option>
+                    <option value="補光設備">補光設備</option>
+                    <option value="收音設備">收音設備</option>
+                    <option value="行動配件">行動配件</option>
+                    <optgroup label="其他分類">
+                      <option value="手機周邊">手機周邊</option>
+                      <option value="影音周邊">影音周邊</option>
+                      <option value="季節家電">季節家電</option>
+                      <option value="健康護理">健康護理</option>
+                      <option value="居家生活">居家生活</option>
+                    </optgroup>
+                  </select>
+                </label>
+                <label style="color: #cbd5e1;">
+                  品牌
+                  <input id="product-brand" type="text" required placeholder="例：TR.tw" style="background: #0f1115; border-color: #242b3b; color: #fff;">
+                </label>
+              </div>
+
+              <div class="form-grid">
+                <label style="color: #cbd5e1;">
+                  售價 NT$
+                  <input id="product-price" type="number" min="0" step="1" required style="background: #0f1115; border-color: #242b3b; color: #fff;">
+                </label>
+                <label style="color: #cbd5e1;">
+                  原價 NT$
+                  <input id="product-original-price" type="number" min="0" step="1" required style="background: #0f1115; border-color: #242b3b; color: #fff;">
+                </label>
+              </div>
+
+              <div class="form-grid">
+                <label style="color: #cbd5e1;">
+                  商品標籤
+                  <input id="product-badge" type="text" required placeholder="例：TR 精選" style="background: #0f1115; border-color: #242b3b; color: #fff;">
+                </label>
+                <label style="color: #cbd5e1;">
+                  無圖替代文字
+                  <input id="product-mark" type="text" maxlength="6" placeholder="例：6L" style="background: #0f1115; border-color: #242b3b; color: #fff;">
+                </label>
+              </div>
+
+              <label style="color: #cbd5e1;">
+                商品描述
+                <textarea id="product-desc" rows="3" required placeholder="輸入商品賣點、適用場景或活動說明" style="background: #0f1115; border-color: #242b3b; color: #fff;"></textarea>
+              </label>
+
+              <section class="upload-section" style="background: #0f1115; border-color: #242b3b; padding: 16px; border-radius: 12px; margin-block: 12px;">
+                <div>
+                  <h4 style="margin: 0; color: #f8fafc;">商品主圖</h4>
+                  <p style="font-size: 11px; color: #64748b;">第一張會作為商品封面。</p>
+                </div>
+                <label class="upload-box" style="background: #161922; border-color: #3b475d; color: #94a3b8;">
+                  選擇主圖
+                  <input id="product-main-images" type="file" accept="image/*" multiple>
+                </label>
+                <div class="upload-grid" id="main-image-preview"></div>
+              </section>
+
+              <section class="upload-section" style="background: #0f1115; border-color: #242b3b; padding: 16px; border-radius: 12px; margin-block: 12px;">
+                <div>
+                  <h4 style="margin: 0; color: #f8fafc;">商品規格 SKU Matrix</h4>
+                </div>
+                <button class="secondary-link" id="add-variant" type="button" style="margin-top: 8px;">新增規格</button>
+                <div class="variant-editor-list" id="variant-editor-list" style="margin-top: 12px;"></div>
+              </section>
+
+              <!-- Hidden files required by scripts -->
+              <input id="product-detail-images" type="file" accept="image/*" multiple hidden>
+              <div id="detail-image-preview" hidden></div>
+              <input id="product-videos" type="file" accept="video/*" multiple hidden>
+              <input id="product-video-url" type="url" hidden>
+              <div id="video-preview" hidden></div>
+
+              <div class="form-actions" style="margin-top: 20px; display: flex; gap: 12px;">
+                <button class="primary-link" type="submit" style="flex: 1; padding: 12px;">儲存商品</button>
+                <button class="secondary-link" id="clear-form" type="button" style="padding: 12px;">清空</button>
+              </div>
+            </form>
+          </section>
+
+          <!-- Product Catalog Table -->
+          <section class="admin-card-panel">
+            <div class="admin-card-header">
+              <h3>📦 商品清單目錄</h3>
+              <span id="admin-summary" style="font-size: 12px; color: #94a3b8;">目前 0 件商品</span>
+            </div>
+
+            <div class="admin-table-wrap" style="overflow-x: auto;">
+              <table class="admin-table" style="width: 100%; border-collapse: collapse; color: #e2e8f0; font-size: 13px;">
+                <thead>
+                  <tr style="border-bottom: 1px solid #242b3b; text-align: left; color: #64748b;">
+                    <th style="padding: 12px;">商品</th>
+                    <th style="padding: 12px;">分類</th>
+                    <th style="padding: 12px;">售價</th>
+                    <th style="padding: 12px;">SKU</th>
+                    <th style="padding: 12px; text-align: right;">操作</th>
+                  </tr>
+                </thead>
+                <tbody id="admin-product-list"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- TAB 3: ORDERS FULFILLMENT -->
+      <section class="admin-tab-content" id="tab-content-orders" hidden>
+        <div class="admin-card-panel">
+          <div class="admin-card-header">
+            <h3>📝 模擬訂單履約中心</h3>
+            <small style="color: #64748b;">前台結帳自動生成，支持修改狀態</small>
+          </div>
+          <div class="admin-table-wrap">
+            <table class="admin-table" style="width: 100%; border-collapse: collapse; font-size: 13px;">
+              <thead>
+                <tr style="border-bottom: 1px solid #242b3b; text-align: left; color: #64748b;">
+                  <th style="padding: 12px;">訂單編號</th>
+                  <th style="padding: 12px;">日期</th>
+                  <th style="padding: 12px;">購買商品摘要</th>
+                  <th style="padding: 12px;">金額</th>
+                  <th style="padding: 12px;">履約狀態</th>
+                </tr>
+              </thead>
+              <tbody id="admin-orders-list"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 4: ANALYTICS & BACKUP -->
+      <section class="admin-tab-content" id="tab-content-analytics" hidden>
+        <div class="admin-card-panel" style="max-width: 680px;">
+          <div class="admin-card-header">
+            <h3>💾 資料備份與恢復</h3>
+          </div>
+          <p style="font-size: 14px; color: #94a3b8; line-height: 1.6;">
+            您可以將目前的商品清單、SKU 規格與價格匯出為 JSON 檔案保存；或在換裝置時直接匯入 JSON 快速還原。
+          </p>
+          <div style="display: flex; gap: 16px; margin-top: 24px;">
+            <button class="primary-link" id="export-products" type="button" style="padding: 12px 20px;">
+              匯出 JSON 備份檔
+            </button>
+            <label class="secondary-link import-label" style="padding: 12px 20px; cursor: pointer; background: rgba(255,255,255,0.08); border-color: #3b475d; color: #fff;">
+              匯入 JSON 檔案
+              <input id="import-products" type="file" accept="application/json" style="display: none;">
+            </label>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="tr-products.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

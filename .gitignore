@@ -1,0 +1,24 @@
+# This workspace contains unrelated reports, design exports, and local tooling.
+# Track only the standalone storefront files listed below.
+*
+
+!.gitignore
+!README.md
+!index.html
+!product.html
+!admin.html
+!visual-editor.html
+!styles.css
+!app.js
+!product.js
+!admin.js
+!visual-editor.js
+!site-content.js
+!tr-products.js
+!catalog-labels.js
+!favicon.svg
+
+!assets/
+assets/*
+!assets/tripod-rooftop-hero-v2.jpg
+!assets/tripod-gesture-detail.jpg
