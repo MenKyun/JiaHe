@@ -591,7 +591,7 @@ const presetThemes = {
   luxury: { brand: "#d4af37", brandDark: "#111111", accent: "#d4af37", gold: "#f3e5ab" },
   emerald: { brand: "#34d399", brandDark: "#064e3b", accent: "#10b981", gold: "#a7f3d0" },
   obsidian: { brand: "#e2e8f0", brandDark: "#090a0f", accent: "#38bdf8", gold: "#94a3b8" },
-  warm: { brand: "#d7ff3f", brandDark: "#101113", accent: "#d7ff3f", gold: "#b9c7d6" }
+  warm: { brand: "#c6d39f", brandDark: "#1d221e", accent: "#c6d39f", gold: "#b7b09d" }
 };
 
 document.querySelector("#preset-theme-select")?.addEventListener("change", (e) => {

@@ -266,7 +266,7 @@ function toggleWishlist(productId) {
     showToast("已從收藏清單移除", "info");
   } else {
     wishlist.push(productId);
-    showToast("已加入收藏清單 ❤️", "success");
+    showToast("已加入收藏清單", "success");
   }
   saveWishlist();
   renderProducts();
@@ -346,7 +346,7 @@ function renderProducts() {
           </a>
           ${pricing.discount ? `<span class="product-discount-badge">-${pricing.discount}%</span>` : ""}
           <button class="wishlist-btn ${isWishlisted ? "is-active" : ""}" type="button" data-wishlist-id="${escapeHtml(product.id)}" title="${isWishlisted ? "取消收藏" : "加入收藏"}">
-            ${isWishlisted ? "❤️" : "🤍"}
+            ${isWishlisted ? "已收藏" : "收藏"}
           </button>
           <div class="product-card-actions">
             <button class="btn-quick-view" type="button" data-quickview-id="${escapeHtml(product.id)}">快速預覽</button>
@@ -365,7 +365,7 @@ function renderProducts() {
           </div>
           <div class="product-actions">
             <button class="add-to-cart" type="button" data-id="${escapeHtml(product.id)}">加入購物車</button>
-            <a class="detail-link" href="${detailUrl}" aria-label="查看商品詳情">↗</a>
+            <a class="detail-link" href="${detailUrl}" aria-label="查看商品詳情">詳情</a>
           </div>
         </div>
       </article>
@@ -678,16 +678,16 @@ function openCheckoutModal() {
         <h4 style="margin-top: 16px; margin-bottom: 8px;">付款方式</h4>
         <div class="payment-options">
           <label class="payment-option is-selected">
-            <input type="radio" name="payment" value="credit" checked> 💳 信用卡付款
+            <input type="radio" name="payment" value="credit" checked> 信用卡付款
           </label>
           <label class="payment-option">
-            <input type="radio" name="payment" value="linepay"> 💚 LINE Pay
+            <input type="radio" name="payment" value="linepay"> LINE Pay
           </label>
           <label class="payment-option">
             <input type="radio" name="payment" value="applepay">  Apple Pay
           </label>
           <label class="payment-option">
-            <input type="radio" name="payment" value="cod"> 📦 貨到付款
+            <input type="radio" name="payment" value="cod"> 貨到付款
           </label>
         </div>
 
@@ -776,7 +776,7 @@ function processOrderSuccess(entries, totalPrice) {
     </div>
   `;
 
-  showToast("🎉 訂單成功送出！", "success");
+  showToast("訂單成功送出。", "success");
 }
 
 productGrid.addEventListener("click", (event) => {
@@ -834,7 +834,7 @@ wishlistTrigger?.addEventListener("click", () => {
           <a href="${detailUrl}">
             ${coverImage ? `<img src="${escapeHtml(coverImage)}" alt="">` : `<span>${escapeHtml(displayName.slice(0, 2))}</span>`}
           </a>
-          <button class="wishlist-btn is-active" type="button" data-wishlist-id="${escapeHtml(product.id)}">❤️</button>
+          <button class="wishlist-btn is-active" type="button" data-wishlist-id="${escapeHtml(product.id)}">已收藏</button>
         </div>
         <div class="product-body">
           <h3><a href="${detailUrl}">${escapeHtml(displayName)}</a></h3>
@@ -871,7 +871,7 @@ function initCountdownTimer() {
 
 document.querySelector("#lead-capture-form")?.addEventListener("submit", (e) => {
   e.preventDefault();
-  showToast("🎉 訂閱成功！首購折扣碼已發送：TRNEW100", "success");
+  showToast("訂閱成功，首購折扣碼已發送：TRNEW100", "success");
   e.target.reset();
 });
 

@@ -325,7 +325,7 @@ function renderProduct(product) {
       </div>
 
       <article class="detail-summary">
-        <p class="eyebrow">${escapeHtml(product.category)}</p>
+        <p class="detail-category">${escapeHtml(product.category)}</p>
         <h1>${escapeHtml(displayName)}</h1>
         <p class="detail-brand">${escapeHtml(product.brand)} / ${escapeHtml(product.badge)} / No. ${escapeHtml(product.id)}</p>
         <p class="detail-desc">${escapeHtml(product.desc)}</p>
@@ -344,7 +344,7 @@ function renderProduct(product) {
 
         <div class="detail-actions">
           <button class="primary-link" type="button" id="detail-add-cart">加入購物車</button>
-          <button class="secondary-link" type="button" id="detail-toggle-wishlist">❤️ 加入收藏</button>
+          <button class="secondary-link" type="button" id="detail-toggle-wishlist">加入收藏</button>
           <a class="secondary-link ${selectedLink ? "" : "is-disabled"}" id="variant-link" href="${selectedLink || "#"}" target="_blank" rel="noreferrer">打開產品連結</a>
           <a class="secondary-link" href="index.html#products">繼續選購</a>
           <p class="product-feedback" id="product-feedback" role="status" aria-live="polite"></p>
@@ -376,7 +376,7 @@ function renderProduct(product) {
       <div class="section-heading">
         <div>
           <p class="eyebrow">Recommendations</p>
-          <h2>同分類推荐商品</h2>
+          <h2>同分類推薦商品</h2>
         </div>
       </div>
       <div class="product-grid">
@@ -455,7 +455,7 @@ function renderProduct(product) {
       showToast("已從收藏清單移除", "info");
     } else {
       wishlist.push(product.id);
-      showToast("已加入收藏清單 ❤️", "success");
+      showToast("已加入收藏清單", "success");
     }
     localStorage.setItem("tr_wishlist_v1", JSON.stringify(wishlist));
     updateWishlistDetailCount();

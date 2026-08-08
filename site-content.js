@@ -2,10 +2,10 @@ const siteContentStorageKey = "goodLifeMallSiteContent";
 
 const defaultSiteContent = {
   theme: {
-    brand: "#d7ff3f",
-    brandDark: "#101113",
-    accent: "#d7ff3f",
-    gold: "#b9c7d6"
+    brand: "#c6d39f",
+    brandDark: "#1d221e",
+    accent: "#c6d39f",
+    gold: "#b7b09d"
   },
   promo: {
     label: "NEW DROP",
@@ -47,7 +47,7 @@ const defaultSiteContent = {
     copy: "落地自動開腳、180cm 延伸與藍牙遙控。從一個人的日常，到完整的創作現場，只需要幾秒。",
     primaryText: "立即選購",
     primaryUrl: "#products",
-    secondaryText: "探索產品 ↘",
+    secondaryText: "探索產品",
     secondaryUrl: "#deals",
     mainDealLabel: "Featured / TUT160",
     mainDealTitle: "丟丟自拍腳架",
@@ -66,7 +66,7 @@ const defaultSiteContent = {
     eyebrow: "Drop & shoot",
     title: "落地，自動打開。",
     copy: "隱藏式腳架在接觸地面時自動展開，收起後依然是一支俐落的自拍棒。少一步調整，多一個不會錯過的畫面。",
-    linkText: "查看丟丟系列 →",
+    linkText: "查看丟丟系列",
     linkUrl: "#products"
   },
   categorySection: {
@@ -150,7 +150,12 @@ function loadSiteContent() {
   try {
     const savedContent = localStorage.getItem(siteContentStorageKey);
     if (!savedContent) return structuredClone(defaultSiteContent);
-    return deepMerge(defaultSiteContent, JSON.parse(savedContent));
+    const content = deepMerge(defaultSiteContent, JSON.parse(savedContent));
+    if (content.theme.brand?.toLowerCase() === "#d7ff3f") content.theme.brand = defaultSiteContent.theme.brand;
+    if (content.theme.accent?.toLowerCase() === "#d7ff3f") content.theme.accent = defaultSiteContent.theme.accent;
+    if (content.theme.brandDark?.toLowerCase() === "#101113") content.theme.brandDark = defaultSiteContent.theme.brandDark;
+    if (content.theme.gold?.toLowerCase() === "#b9c7d6") content.theme.gold = defaultSiteContent.theme.gold;
+    return content;
   } catch (error) {
     console.warn("前台內容讀取失敗，已套用預設內容。", error);
     return structuredClone(defaultSiteContent);
