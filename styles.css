@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=LXGW+WenKai+TC&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap");
 
 :root {
   --ink: #1b1b18;
@@ -15,8 +15,8 @@
   --gold: #b9c7d6;
   --success: #37674a;
   --danger: #ad331d;
-  --font-body: "IBM Plex Sans", "Noto Sans TC", sans-serif;
-  --font-display: "Noto Serif TC", "Songti TC", serif;
+  --font-body: "Manrope", "Noto Sans TC", "PingFang TC", sans-serif;
+  --font-display: "LXGW WenKai TC", "Noto Sans TC", sans-serif;
   --container: 1320px;
   --shadow-float: 0 24px 70px rgba(31, 27, 20, 0.14);
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
@@ -5832,7 +5832,7 @@ p {
 .admin-dashboard-intro h2 {
   max-width: 760px;
   margin: 22px 0 0;
-  font-family: "Noto Serif TC", serif;
+  font-family: var(--font-display);
   font-size: clamp(34px, 4vw, 58px);
   font-weight: 700;
   letter-spacing: -0.055em;
@@ -6626,7 +6626,7 @@ p {
 
 .admin-storage-note h3 {
   margin: 50px 0 14px;
-  font-family: "Noto Serif TC", serif;
+  font-family: var(--font-display);
   font-size: 25px;
 }
 
@@ -6927,7 +6927,7 @@ summary {
   --paper: #f3f3ef;
   --paper-deep: #e9eae4;
   --panel: #fafaf7;
-  --font-display: "Noto Serif TC", "Songti TC", serif;
+  --font-display: "LXGW WenKai TC", "Noto Sans TC", sans-serif;
   --shadow-float: 0 18px 48px rgba(26, 33, 28, 0.11);
   background: var(--paper);
 }
@@ -7081,9 +7081,9 @@ summary {
   max-width: 700px;
   margin-bottom: 24px;
   font-size: clamp(50px, 5.6vw, 82px);
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.035em;
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.018em;
   text-shadow: 0 5px 20px rgba(5, 9, 7, 0.18);
   text-wrap: balance;
 }
@@ -7240,8 +7240,9 @@ summary {
   max-width: 480px;
   margin-bottom: 24px;
   font-size: clamp(44px, 4.7vw, 64px);
+  font-weight: 400;
   line-height: 1.08;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.015em;
 }
 
 .storefront-page .campaign-band p:not(.eyebrow) {
@@ -7398,8 +7399,9 @@ summary {
 
 .storefront-page .section-heading h2 {
   font-size: clamp(38px, 4.2vw, 56px);
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: -0.012em;
   text-wrap: balance;
 }
 
@@ -7556,8 +7558,8 @@ summary {
 .storefront-page .lead-capture-box h2 {
   font-family: var(--font-display);
   font-size: clamp(28px, 3vw, 38px);
-  font-weight: 600;
-  letter-spacing: -0.025em;
+  font-weight: 400;
+  letter-spacing: -0.012em;
 }
 
 .storefront-page .lead-form input,
@@ -7583,8 +7585,9 @@ summary {
 
 .storefront-page .member-panel h2 {
   font-size: clamp(38px, 4.2vw, 56px);
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: -0.012em;
 }
 
 .storefront-page .member-stats strong {
@@ -7661,9 +7664,9 @@ summary {
 .product-page .detail-summary h1 {
   max-width: 650px;
   font-size: clamp(34px, 3.6vw, 50px);
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
+  font-weight: 400;
+  line-height: 1.24;
+  letter-spacing: -0.012em;
   text-wrap: balance;
 }
 
@@ -7782,9 +7785,10 @@ summary {
 }
 
 .admin-page-title h1 {
+  font-family: var(--font-display);
   font-size: clamp(25px, 2vw, 31px);
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 .admin-button {
@@ -7951,9 +7955,10 @@ summary {
 }
 
 .visual-editor-page .admin-header h1 {
+  font-family: var(--font-display);
   font-size: clamp(34px, 4vw, 52px);
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 .visual-editor-page .primary-link,
@@ -8214,5 +8219,178 @@ summary {
 
   .admin-kpi-card:nth-child(-n + 2) {
     border-bottom: 1px solid var(--admin-line);
+  }
+}
+
+/* ==========================================================================
+   SOFTER TYPE & PURPOSEFUL MOTION — camera-focus interaction language
+   ========================================================================== */
+
+.storefront-page .hero-slide {
+  transition: opacity 420ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.storefront-page .hero-slide img {
+  transform: scale(1.018);
+  transition: transform 720ms cubic-bezier(0.16, 1, 0.3, 1), filter 240ms ease;
+}
+
+.storefront-page .hero-slide.is-active img {
+  transform: scale(1);
+}
+
+.storefront-page .product-visual,
+.storefront-page .category-grid article,
+.storefront-page .campaign-visual,
+.product-page .detail-main-image {
+  isolation: isolate;
+}
+
+.storefront-page .product-visual img,
+.storefront-page .category-media,
+.storefront-page .campaign-visual img {
+  transform-origin: center;
+  transition: transform 460ms cubic-bezier(0.16, 1, 0.3, 1), filter 220ms ease;
+}
+
+.storefront-page .primary-link,
+.storefront-page .secondary-link,
+.storefront-page .add-to-cart,
+.storefront-page .detail-link,
+.storefront-page .wishlist-btn,
+.product-page .primary-link,
+.product-page .secondary-link,
+.admin-button,
+.visual-editor-page .primary-link,
+.visual-editor-page .secondary-link {
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease, transform 140ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.storefront-page .primary-link:active,
+.storefront-page .secondary-link:active,
+.storefront-page .add-to-cart:active,
+.storefront-page .detail-link:active,
+.storefront-page .wishlist-btn:active,
+.product-page .primary-link:active,
+.product-page .secondary-link:active,
+.admin-button:active,
+.visual-editor-page .primary-link:active,
+.visual-editor-page .secondary-link:active {
+  transform: translateY(1px) scale(0.985);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .storefront-page .product-card:hover .product-visual img,
+  .storefront-page .category-grid article:hover .category-media {
+    transform: scale(1.025);
+  }
+
+  .storefront-page .campaign-band:hover .campaign-visual img {
+    transform: scale(1.018);
+    filter: saturate(0.94) contrast(0.99);
+  }
+}
+
+@keyframes tr-frame-open {
+  from {
+    clip-path: inset(3.5% 1.2% 4.5% round 14px);
+  }
+  to {
+    clip-path: inset(0 round 16px);
+  }
+}
+
+@keyframes tr-image-settle {
+  from {
+    transform: scale(1.04);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes tr-title-focus {
+  from {
+    opacity: 0.28;
+    clip-path: inset(0 0 34% 0);
+    filter: blur(5px);
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0);
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes tr-detail-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tr-note-arrive {
+  from {
+    opacity: 0;
+    transform: translateX(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .storefront-page .hero.is-motion-ready .hero-showcase {
+    animation: tr-frame-open 720ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .storefront-page .hero.is-motion-ready .hero-slide.is-active img {
+    animation: tr-image-settle 780ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .storefront-page .hero.is-motion-ready h1 {
+    animation: tr-title-focus 580ms cubic-bezier(0.16, 1, 0.3, 1) 100ms both;
+  }
+
+  .storefront-page .hero.is-motion-ready .hero-copy,
+  .storefront-page .hero.is-motion-ready .hero-actions,
+  .storefront-page .hero.is-motion-ready .hero-trust-bar,
+  .storefront-page .hero.is-motion-ready .hero-specs {
+    animation: tr-detail-arrive 480ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .storefront-page .hero.is-motion-ready .hero-copy {
+    animation-delay: 190ms;
+  }
+
+  .storefront-page .hero.is-motion-ready .hero-actions {
+    animation-delay: 260ms;
+  }
+
+  .storefront-page .hero.is-motion-ready .hero-trust-bar {
+    animation-delay: 320ms;
+  }
+
+  .storefront-page .hero.is-motion-ready .hero-specs {
+    animation-delay: 370ms;
+  }
+
+  .storefront-page .hero.is-motion-ready .hero-feature-note {
+    animation: tr-note-arrive 480ms cubic-bezier(0.16, 1, 0.3, 1) 300ms both;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .storefront-page .hero.is-motion-ready *,
+  .storefront-page .hero.is-motion-ready::before,
+  .storefront-page .hero.is-motion-ready::after {
+    animation: none !important;
   }
 }

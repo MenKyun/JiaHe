@@ -397,12 +397,24 @@ function renderProduct(product) {
 
   const thumbs = document.querySelector("#detail-thumbs");
   const mainImage = document.querySelector("#detail-main-image");
+  const animateMainImage = () => {
+    if (!mainImage || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    mainImage.animate([
+      { opacity: 0.58, transform: "scale(0.985)", clipPath: "inset(2.5% round 10px)" },
+      { opacity: 1, transform: "scale(1)", clipPath: "inset(0 round 10px)" }
+    ], {
+      duration: 340,
+      easing: "cubic-bezier(0.16, 1, 0.3, 1)"
+    });
+  };
+
   thumbs?.addEventListener("click", (event) => {
     const button = event.target.closest("button[data-image]");
     if (!button) return;
 
     thumbs.querySelectorAll("button").forEach((item) => item.classList.toggle("is-active", item === button));
     mainImage.innerHTML = `<img src="${button.dataset.image}" alt="${escapeHtml(displayName)}">`;
+    animateMainImage();
   });
 
   const variantGrid = document.querySelector("#variant-card-grid");
@@ -432,6 +444,7 @@ function renderProduct(product) {
 
     if (variant.image) {
       mainImage.innerHTML = `<img src="${escapeHtml(variant.image)}" alt="${escapeHtml(displayName)}">`;
+      animateMainImage();
     }
   });
 

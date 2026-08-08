@@ -869,6 +869,21 @@ function initCountdownTimer() {
   }, 1000);
 }
 
+function initHomepageMotion() {
+  const hero = document.querySelector(".storefront-page .hero");
+  if (!hero || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const introduceHero = () => {
+    window.requestAnimationFrame(() => hero.classList.add("is-motion-ready"));
+  };
+
+  if (document.readyState === "loading") {
+    window.addEventListener("DOMContentLoaded", introduceHero, { once: true });
+  } else {
+    introduceHero();
+  }
+}
+
 document.querySelector("#lead-capture-form")?.addEventListener("submit", (e) => {
   e.preventDefault();
   showToast("訂閱成功，首購折扣碼已發送：TRNEW100", "success");
@@ -881,3 +896,4 @@ renderHeroFeature();
 renderCategoryImagery();
 initHeroCarousel();
 initCountdownTimer();
+initHomepageMotion();
