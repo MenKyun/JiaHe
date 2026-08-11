@@ -7302,11 +7302,11 @@ summary {
   width: min(var(--container), calc(100% - 48px));
   margin: 88px auto 0;
   padding: 32px 36px;
-  color: var(--ink);
-  background: #ebede5;
-  border: 1px solid #ccd1c7;
-  border-radius: 14px;
-  box-shadow: none;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0071e3 0%, #0058b3 100%);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 113, 227, 0.2);
 }
 
 .storefront-page .flash-sale-band::after {
@@ -7315,13 +7315,13 @@ summary {
 
 .storefront-page .flash-sale-content h2 {
   margin: 0 0 8px;
-  color: var(--ink);
+  color: #ffffff;
   font-size: clamp(22px, 2.5vw, 30px);
   font-weight: 600;
 }
 
 .storefront-page .flash-sale-content p {
-  color: #667066;
+  color: rgba(255, 255, 255, 0.75);
   font-size: 13px;
 }
 
@@ -7330,12 +7330,12 @@ summary {
   padding: 7px 0 7px 28px;
   background: transparent;
   border: 0;
-  border-left: 1px solid #c5cac0;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0;
 }
 
 .storefront-page .countdown-val {
-  color: #515154;
+  color: #ffffff;
   font-size: 26px;
   font-weight: 500;
   font-variant-numeric: tabular-nums;
@@ -7343,7 +7343,7 @@ summary {
 
 .storefront-page .countdown-lbl,
 .storefront-page .countdown-colon {
-  color: #7c847b;
+  color: rgba(255, 255, 255, 0.65);
   font-weight: 400;
 }
 
@@ -7358,51 +7358,56 @@ summary {
 }
 
 .storefront-page .reviews-grid {
-  gap: 30px;
+  gap: 24px;
   margin-top: 32px;
 }
 
+/* Premium Apple-style elevated review cards */
 .storefront-page .review-card {
-  gap: 18px;
-  padding: 26px 0 0;
-  background: transparent;
-  border: 0;
-  border-top: 1px solid var(--line-dark);
-  border-radius: 0;
-  transition: none;
+  gap: 16px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.03);
+  transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1), box-shadow 200ms ease;
 }
 
 .storefront-page .review-card:hover {
-  box-shadow: none;
-  transform: none;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+  transform: translateY(-3px);
 }
 
 .storefront-page .review-stars {
-  color: #8f825f;
-  font-size: 12px;
-  letter-spacing: 3px;
+  color: #f59e0b;
+  font-size: 13px;
+  letter-spacing: 2px;
 }
 
 .storefront-page .review-quote {
-  color: #86868b;
+  color: #515154;
   font-size: 14px;
   font-style: normal;
   line-height: 1.75;
 }
 
 .storefront-page .review-author {
-  border-top-style: solid;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 14px;
 }
 
 .storefront-page .author-avatar {
-  color: #515154;
-  background: #dce2ce;
-  font-weight: 500;
+  color: #ffffff;
+  background: #0071e3;
+  font-weight: 600;
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
 }
 
 .storefront-page .author-info small {
   padding: 0;
-  color: #727a72;
+  color: #86868b;
   background: transparent;
   font-weight: 400;
 }
