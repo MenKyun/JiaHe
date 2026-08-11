@@ -2,16 +2,17 @@
 
 :root {
   --ink: #f8fafc;
-  --ink-soft: #cbd5e1;
+  --ink-soft: #94a3b8;
   --muted: #64748b;
-  --line: rgba(255, 255, 255, 0.09);
-  --line-dark: rgba(56, 189, 248, 0.25);
-  --paper: #07080b;
-  --paper-deep: #0b0d12;
-  --panel: #0f121a;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-dark: rgba(56, 189, 248, 0.2);
+  --paper: #08090d;
+  --paper-deep: #0c0e14;
+  --panel: #11141e;
+  --card-glass-bg: rgba(17, 21, 30, 0.75);
   --brand: #d7ff3f;
   --brand-cyan: #38bdf8;
-  --brand-dark: #07080b;
+  --brand-dark: #08090d;
   --accent: #38bdf8;
   --gold: #38bdf8;
   --success: #34d399;
@@ -20,7 +21,10 @@
   --font-display: "Syne", "Outfit", "Noto Sans TC", sans-serif;
   --container: 1360px;
   --shadow-float: 0 30px 80px rgba(0, 0, 0, 0.85), 0 0 40px rgba(56, 189, 248, 0.1);
-  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
   --z-header: 20;
   --z-backdrop: 40;
   --z-drawer: 50;
@@ -30,6 +34,15 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/* Emil Kowalski Design Eng: Responsive button press feedback */
+:where(button, .primary-link, .secondary-link, .btn-quick-add, .btn-quick-view, .add-to-cart, .category-button, .wishlist-btn) {
+  transition: transform 160ms var(--ease-out), background 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+:where(button, .primary-link, .secondary-link, .btn-quick-add, .btn-quick-view, .add-to-cart):active {
+  transform: scale(0.97) !important;
 }
 
 html {
