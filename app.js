@@ -884,6 +884,131 @@ function initHomepageMotion() {
   }
 }
 
+function initScrollReveal() {
+  const elements = document.querySelectorAll(".reveal-on-scroll");
+  if (!elements.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+}
+
+function triggerCartPulse() {
+  if (!cartTrigger) return;
+  cartTrigger.classList.remove("cart-trigger-pop");
+  void cartTrigger.offsetWidth;
+  cartTrigger.classList.add("cart-trigger-pop");
+}
+
+function showToast(message, type = "success") {
+  const container = document.querySelector("#toast-container");
+  if (!container) return;
+
+  const toast = document.createElement("div");
+  toast.className = `toast-message toast-${type}`;
+  toast.innerHTML = `
+    <span class="toast-icon">✓</span>
+    <span>${escapeHtml(message)}</span>
+  `;
+
+  container.appendChild(toast);
+
+  setTimeout(() => {
+    toast.classList.add("toast-hiding");
+    toast.addEventListener("animationend", () => toast.remove());
+  }, 2800);
+}
+
+function openQuickView(productId) {
+  const product = products.find((p) => p.id === productId);
+  if (!product) return;
+
+  const quickViewModal = document.querySelector("#quick-view-modal");
+  const quickViewContent = document.querySelector("#quick-view-content");
+  const modalBackdrop = document.querySelector("#modal-backdrop");
+  if (!quickViewModal || !quickViewContent) return;
+
+  const coverImage = getCoverImage(product);
+  const pricing = getProductPricing(product);
+  const displayName = getProductName(product);
+
+  quickViewContent.innerHTML = `
+    <div class="qv-media">
+      ${coverImage ? `<img src="${escapeHtml(coverImage)}" alt="${escapeHtml(displayName)}">` : `<div class="no-img"></div>`}
+    </div>
+    <div class="qv-info">
+      <span class="qv-brand">${escapeHtml(product.brand || "TR SELECT")}</span>
+      <h2 class="qv-title">${escapeHtml(displayName)}</h2>
+      <div class="qv-price-row">
+        <span class="qv-price">${formatCurrency(pricing.salePrice)}</span>
+        ${pricing.originalPrice > pricing.salePrice ? `<span class="qv-original-price">${formatCurrency(pricing.originalPrice)}</span>` : ""}
+      </div>
+      <p class="qv-desc">${escapeHtml(product.desc || "精選優質行動影像與生活配件，台北現貨出貨，含原廠保固。")}</p>
+      <button class="qv-add-btn" type="button" data-qv-add="${escapeHtml(product.id)}">加入購物車</button>
+    </div>
+  `;
+
+  quickViewModal.classList.add("is-open");
+  if (modalBackdrop) modalBackdrop.classList.add("is-open");
+  document.body.classList.add("has-open-modal");
+}
+
+function closeQuickViewModal() {
+  const quickViewModal = document.querySelector("#quick-view-modal");
+  const modalBackdrop = document.querySelector("#modal-backdrop");
+  if (quickViewModal) quickViewModal.classList.remove("is-open");
+  if (modalBackdrop) modalBackdrop.classList.remove("is-open");
+  document.body.classList.remove("has-open-modal");
+}
+
+document.querySelector("#close-quick-view")?.addEventListener("click", closeQuickViewModal);
+
+document.addEventListener("click", (event) => {
+  const qvAddBtn = event.target.closest("button[data-qv-add]");
+  if (qvAddBtn) {
+    const productId = qvAddBtn.dataset.qvAdd;
+    addToCart(productId);
+    triggerCartPulse();
+    const product = products.find((p) => p.id === productId);
+    showToast(`已加入購物車：${getProductName(product)}`, "success");
+    closeQuickViewModal();
+    return;
+  }
+
+  const quickViewBtn = event.target.closest("button[data-quickview-id]");
+  if (quickViewBtn) {
+    openQuickView(quickViewBtn.dataset.quickviewId);
+    return;
+  }
+});
+
+function initBackToTop() {
+  const btn = document.querySelector("#back-to-top-btn");
+  if (!btn) return;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 350) {
+      btn.classList.add("is-visible");
+    } else {
+      btn.classList.remove("is-visible");
+    }
+  });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
 document.querySelector("#lead-capture-form")?.addEventListener("submit", (e) => {
   e.preventDefault();
   showToast("訂閱成功，首購折扣碼已發送：TRNEW100", "success");
@@ -897,3 +1022,6 @@ renderCategoryImagery();
 initHeroCarousel();
 initCountdownTimer();
 initHomepageMotion();
+initScrollReveal();
+initBackToTop();
+

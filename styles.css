@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=LXGW+WenKai+TC&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap");
 
 :root {
   --ink: #1b1b18;
@@ -8394,3 +8394,544 @@ summary {
     animation: none !important;
   }
 }
+
+/* ==========================================================================
+   LUXURY DESIGN SYSTEM & HIGH-END MICRO-ANIMATION EXTENSIONS
+   TR SELECT / 2026 Premium Refresh
+   ========================================================================== */
+
+/* Font Family Overrides for Ultra Premium Feel */
+:root {
+  --font-body: "Plus Jakarta Sans", "Noto Sans TC", "PingFang TC", sans-serif;
+  --font-display: "Syne", "Outfit", "Noto Sans TC", sans-serif;
+  --brand-glow: rgba(215, 255, 63, 0.35);
+  --gold-accent: #e6c875;
+  --gold-glow: rgba(230, 200, 117, 0.25);
+  --card-glass-bg: rgba(20, 22, 28, 0.65);
+  --card-glass-border: rgba(255, 255, 255, 0.12);
+  --card-glass-hover-border: rgba(215, 255, 63, 0.4);
+}
+
+/* Keyframe Animations */
+@keyframes scrollRevealUp {
+  from {
+    opacity: 0;
+    transform: translateY(36px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes pulseBrandGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(215, 255, 63, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(215, 255, 63, 0.6);
+  }
+}
+
+@keyframes floatAmbient {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes cartBadgePop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.45); }
+  100% { transform: scale(1); }
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes toastOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.95);
+  }
+}
+
+@keyframes modalBackdropIn {
+  from { opacity: 0; backdrop-filter: blur(0px); }
+  to { opacity: 1; backdrop-filter: blur(16px); }
+}
+
+@keyframes modalContentIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Scroll Reveal Classes */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 100ms; }
+.reveal-delay-2 { transition-delay: 200ms; }
+.reveal-delay-3 { transition-delay: 300ms; }
+.reveal-delay-4 { transition-delay: 400ms; }
+
+/* Enhanced Hero & Atmospheric Ambient Lighting */
+.storefront-page .hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: radial-gradient(circle at 80% 20%, rgba(215, 255, 63, 0.12) 0%, rgba(16, 17, 19, 0.98) 70%);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.7);
+}
+
+.storefront-page .hero::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(215, 255, 63, 0.15), transparent 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  animation: floatAmbient 10s ease-in-out infinite;
+}
+
+.storefront-page .hero h1 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #ffffff 30%, #c0cfd6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.storefront-page .hero-specs strong {
+  font-family: "Outfit", sans-serif;
+  color: var(--brand);
+  text-shadow: 0 0 20px rgba(215, 255, 63, 0.4);
+}
+
+.storefront-page .hero .primary-link {
+  position: relative;
+  overflow: hidden;
+  background: var(--brand);
+  color: var(--brand-dark);
+  font-weight: 700;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(215, 255, 63, 0.35);
+  transition: all 0.4s var(--ease);
+}
+
+.storefront-page .hero .primary-link:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 14px 40px rgba(215, 255, 63, 0.6);
+}
+
+.storefront-page .hero .primary-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transition: left 0.6s ease;
+}
+
+.storefront-page .hero .primary-link:hover::before {
+  left: 100%;
+}
+
+/* Glassmorphism Product Card Upgrades */
+.product-card {
+  position: relative;
+  background: var(--card-glass-bg) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--card-glass-border) !important;
+  border-radius: 20px !important;
+  padding: 16px !important;
+  overflow: hidden;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.45s ease, box-shadow 0.45s ease !important;
+}
+
+.product-card:hover {
+  transform: translateY(-8px) scale(1.01) !important;
+  border-color: var(--card-glass-hover-border) !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6), 0 0 30px rgba(215, 255, 63, 0.12) !important;
+}
+
+.product-card .card-media {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px !important;
+  background: #15171d !important;
+}
+
+.product-card .card-media img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.product-card:hover .card-media img {
+  transform: scale(1.08) !important;
+}
+
+/* Quick Action Overlay on Product Card */
+.product-card-actions {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 5;
+}
+
+.product-card:hover .product-card-actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-quick-view, .btn-quick-add {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(16, 17, 21, 0.85);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.btn-quick-add {
+  background: var(--brand);
+  color: var(--brand-dark);
+  border-color: var(--brand);
+}
+
+.btn-quick-view:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn-quick-add:hover {
+  background: #e4ff6b;
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(215, 255, 63, 0.4);
+}
+
+/* Flash Sale Band Luxury Styling */
+.flash-sale-band {
+  background: linear-gradient(135deg, rgba(215, 255, 63, 0.08) 0%, rgba(17, 19, 24, 0.95) 100%) !important;
+  border: 1px solid rgba(215, 255, 63, 0.25) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), inset 0 0 30px rgba(215, 255, 63, 0.05) !important;
+}
+
+.countdown-box {
+  background: rgba(10, 11, 14, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 18px !important;
+  padding: 14px 20px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+.countdown-val {
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 800 !important;
+  color: var(--brand) !important;
+  text-shadow: 0 0 16px rgba(215, 255, 63, 0.5) !important;
+}
+
+/* Cart Trigger Pop Pulse */
+.cart-trigger-pop {
+  animation: cartBadgePop 0.4s var(--ease-bounce) !important;
+}
+
+/* Quick View Modal Styles */
+.quick-view-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.quick-view-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(8, 9, 11, 0.75);
+  animation: modalBackdropIn 0.35s ease forwards;
+}
+
+.quick-view-dialog {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 920px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: rgba(18, 20, 26, 0.95);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8), 0 0 40px rgba(215, 255, 63, 0.1);
+  animation: modalContentIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .quick-view-dialog {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
+}
+
+.quick-view-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  z-index: 10;
+}
+
+.quick-view-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+.qv-media {
+  border-radius: 18px;
+  overflow: hidden;
+  background: #111318;
+  aspect-ratio: 1;
+}
+
+.qv-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.qv-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.qv-brand {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--brand);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.qv-title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.qv-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.qv-price {
+  font-family: "Outfit", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--brand);
+}
+
+.qv-original-price {
+  font-size: 16px;
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.qv-desc {
+  font-size: 15px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.qv-add-btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  background: var(--brand);
+  color: var(--brand-dark);
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 30px rgba(215, 255, 63, 0.3);
+  transition: all 0.3s ease;
+}
+
+.qv-add-btn:hover {
+  background: #e4ff6b;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(215, 255, 63, 0.5);
+}
+
+/* Toast Notifications */
+#toast-container {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: var(--z-toast);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: none;
+}
+
+.toast-message {
+  pointer-events: auto;
+  min-width: 280px;
+  padding: 14px 20px;
+  background: rgba(22, 24, 30, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(215, 255, 63, 0.3);
+  border-radius: 16px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(215, 255, 63, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: toastIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.toast-message.toast-hiding {
+  animation: toastOut 0.3s ease forwards;
+}
+
+.toast-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(215, 255, 63, 0.2);
+  color: var(--brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+/* Back to Top Floating Action Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 28px;
+  left: 28px;
+  z-index: 30;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(22, 24, 30, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.35s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.back-to-top-btn.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top-btn:hover {
+  background: var(--brand);
+  color: var(--brand-dark);
+  border-color: var(--brand);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(215, 255, 63, 0.4);
+}
+
