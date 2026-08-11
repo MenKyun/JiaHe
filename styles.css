@@ -1,25 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap");
 
 :root {
-  --ink: #1b1b18;
-  --ink-soft: #32312d;
-  --muted: #716f68;
-  --line: #ccc7bc;
-  --line-dark: #8a867d;
-  --paper: #f4f0e8;
-  --paper-deep: #e9e4da;
-  --panel: #fbf9f4;
+  --ink: #f8fafc;
+  --ink-soft: #cbd5e1;
+  --muted: #64748b;
+  --line: rgba(255, 255, 255, 0.09);
+  --line-dark: rgba(56, 189, 248, 0.25);
+  --paper: #07080b;
+  --paper-deep: #0b0d12;
+  --panel: #0f121a;
   --brand: #d7ff3f;
-  --brand-dark: #101113;
-  --accent: #d7ff3f;
-  --gold: #b9c7d6;
-  --success: #37674a;
-  --danger: #ad331d;
-  --font-body: "Manrope", "Noto Sans TC", "PingFang TC", sans-serif;
-  --font-display: "LXGW WenKai TC", "Noto Sans TC", sans-serif;
-  --container: 1320px;
-  --shadow-float: 0 24px 70px rgba(31, 27, 20, 0.14);
-  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --brand-cyan: #38bdf8;
+  --brand-dark: #07080b;
+  --accent: #38bdf8;
+  --gold: #38bdf8;
+  --success: #34d399;
+  --danger: #f87171;
+  --font-body: "Plus Jakarta Sans", "Noto Sans TC", "PingFang TC", sans-serif;
+  --font-display: "Syne", "Outfit", "Noto Sans TC", sans-serif;
+  --container: 1360px;
+  --shadow-float: 0 30px 80px rgba(0, 0, 0, 0.85), 0 0 40px rgba(56, 189, 248, 0.1);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --z-header: 20;
   --z-backdrop: 40;
   --z-drawer: 50;
@@ -864,8 +865,10 @@ p {
   grid-column: span 1;
   min-height: 240px;
   padding: 25px;
-  background: var(--panel);
-  transition: color 240ms ease, background 240ms ease;
+  background: rgba(15, 18, 26, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.4s var(--ease);
 }
 
 .category-grid article:first-child {
@@ -873,8 +876,10 @@ p {
 }
 
 .category-grid article:hover {
-  color: var(--paper);
-  background: var(--ink);
+  background: rgba(24, 30, 44, 0.9);
+  border-color: var(--brand-cyan);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(56, 189, 248, 0.15);
+  transform: translateY(-4px);
 }
 
 .category-grid span {
@@ -923,7 +928,7 @@ p {
   aspect-ratio: 1 / 1.08;
   overflow: hidden;
   color: var(--line-dark);
-  background: #ebe7de;
+  background: #131620;
   font-family: var(--font-display);
   font-size: 58px;
   font-weight: 900;
@@ -8510,8 +8515,8 @@ summary {
   overflow: hidden;
   border-radius: 28px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: radial-gradient(circle at 80% 20%, rgba(215, 255, 63, 0.12) 0%, rgba(16, 17, 19, 0.98) 70%);
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.7);
+  background: radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.16) 0%, rgba(215, 255, 63, 0.08) 35%, rgba(7, 8, 11, 0.98) 75%);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8), 0 0 50px rgba(56, 189, 248, 0.08);
 }
 
 .storefront-page .hero::after {
@@ -8521,7 +8526,7 @@ summary {
   right: -20%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(215, 255, 63, 0.15), transparent 70%);
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.15), rgba(215, 255, 63, 0.1), transparent 70%);
   filter: blur(80px);
   pointer-events: none;
   animation: floatAmbient 10s ease-in-out infinite;
