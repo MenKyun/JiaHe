@@ -8950,6 +8950,266 @@ summary {
   color: var(--brand-dark);
   border-color: var(--brand);
   transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 12px 35px rgba(215, 255, 63, 0.4);
+  box-shadow: 0 12px 35px rgba(56, 189, 248, 0.4);
+}
+
+/* ==========================================================================
+   MASTER TITANIUM SAPPHIRE LUXURY COLOR OVERHAUL (100% Harmonized Theme)
+   ========================================================================== */
+
+/* 1. Global Token Overrides */
+:root {
+  --paper: #0d0e12 !important;
+  --paper-deep: #090a0d !important;
+  --panel: #141720 !important;
+  --panel-glass: rgba(20, 23, 32, 0.85) !important;
+  --card-glass-bg: rgba(18, 22, 31, 0.75) !important;
+  --card-glass-border: rgba(255, 255, 255, 0.08) !important;
+  --card-glass-hover-border: rgba(56, 189, 248, 0.35) !important;
+  --ink: #f1f5f9 !important;
+  --ink-soft: #94a3b8 !important;
+  --muted: #64748b !important;
+  --line: rgba(255, 255, 255, 0.08) !important;
+  --line-dark: rgba(56, 189, 248, 0.2) !important;
+  --brand: #38bdf8 !important;
+  --brand-cyan: #38bdf8 !important;
+  --brand-glow: rgba(56, 189, 248, 0.3) !important;
+  --brand-dark: #0d0e12 !important;
+  --accent: #38bdf8 !important;
+  --gold: #38bdf8 !important;
+  --success: #34d399 !important;
+  --danger: #f87171 !important;
+}
+
+/* 2. Global Canvas & Body Harmony */
+body, html {
+  background-color: var(--paper) !important;
+  color: var(--ink) !important;
+}
+
+/* 3. Header, Promo & Utility Rows */
+.site-header {
+  background: rgba(13, 14, 18, 0.88) !important;
+  border-bottom: 1px solid var(--line) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+}
+
+.promo-bar {
+  background: #090a0d !important;
+  color: var(--ink-soft) !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+.promo-bar a {
+  color: var(--brand-cyan) !important;
+}
+
+.utility-row {
+  border-bottom: 1px solid var(--line) !important;
+  color: var(--muted) !important;
+}
+
+.search-box {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.search-box input {
+  color: #fff !important;
+}
+
+.search-box input::placeholder {
+  color: var(--muted) !important;
+}
+
+.search-box button {
+  color: var(--brand-cyan) !important;
+}
+
+.category-button {
+  color: var(--muted) !important;
+}
+
+.category-button:hover,
+.category-button.is-active {
+  color: var(--ink) !important;
+}
+
+.category-button.is-active::after {
+  background: var(--brand-cyan) !important;
+}
+
+/* 4. Hero Section */
+.storefront-page .hero {
+  background: radial-gradient(circle at 75% 25%, rgba(56, 189, 248, 0.14) 0%, rgba(13, 14, 18, 0.98) 75%) !important;
+  border: 1px solid var(--line) !important;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8), 0 0 40px rgba(56, 189, 248, 0.08) !important;
+}
+
+.storefront-page .hero h1 {
+  background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.storefront-page .hero .primary-link {
+  background: var(--brand-cyan) !important;
+  color: #0d0e12 !important;
+  border: none !important;
+  box-shadow: 0 8px 30px rgba(56, 189, 248, 0.35) !important;
+}
+
+.storefront-page .hero .primary-link:hover {
+  background: #7dd3fc !important;
+  box-shadow: 0 12px 40px rgba(56, 189, 248, 0.55) !important;
+}
+
+.hero-specs strong {
+  color: var(--brand-cyan) !important;
+  text-shadow: 0 0 16px rgba(56, 189, 248, 0.4) !important;
+}
+
+/* 5. Service Strip & Campaign Band */
+.service-strip {
+  border-color: var(--line) !important;
+}
+
+.service-strip article {
+  border-color: var(--line) !important;
+  background: rgba(20, 23, 32, 0.4) !important;
+}
+
+.service-strip article::before {
+  color: var(--brand-cyan) !important;
+}
+
+.campaign-band {
+  background: linear-gradient(135deg, #090a0d 0%, #141720 100%) !important;
+  border: 1px solid var(--line) !important;
+}
+
+.campaign-number {
+  color: var(--brand-cyan) !important;
+}
+
+/* 6. Product Cards & Visual Containers */
+.product-card {
+  background: var(--card-glass-bg) !important;
+  border: 1px solid var(--card-glass-border) !important;
+  border-radius: 20px !important;
+}
+
+.product-card:hover {
+  border-color: var(--card-glass-hover-border) !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7), 0 0 30px rgba(56, 189, 248, 0.15) !important;
+}
+
+.product-visual {
+  background: #11141c !important;
+  border-radius: 14px !important;
+}
+
+.price {
+  color: var(--brand-cyan) !important;
+  font-weight: 700 !important;
+}
+
+.add-to-cart {
+  background: var(--brand-cyan) !important;
+  color: #0d0e12 !important;
+  font-weight: 700 !important;
+  border: none !important;
+}
+
+.add-to-cart:hover {
+  background: #7dd3fc !important;
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4) !important;
+}
+
+.btn-quick-add {
+  background: var(--brand-cyan) !important;
+  color: #0d0e12 !important;
+}
+
+.btn-quick-add:hover {
+  background: #7dd3fc !important;
+}
+
+.btn-quick-view {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.btn-quick-view:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* 7. Category Grid */
+.category-grid {
+  background: var(--line) !important;
+  border: 1px solid var(--line) !important;
+}
+
+.category-grid article {
+  background: rgba(20, 23, 32, 0.6) !important;
+  border-color: var(--line) !important;
+}
+
+.category-grid article:hover {
+  background: rgba(30, 36, 50, 0.85) !important;
+  border-color: var(--brand-cyan) !important;
+}
+
+.category-grid span {
+  color: var(--brand-cyan) !important;
+}
+
+/* 8. Review Cards */
+.review-card {
+  background: rgba(20, 23, 32, 0.65) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 18px !important;
+}
+
+.review-stars {
+  color: var(--brand-cyan) !important;
+}
+
+/* 9. Flash Sale Band */
+.flash-sale-band {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.08) 0%, rgba(13, 14, 18, 0.95) 100%) !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+}
+
+.countdown-val {
+  color: var(--brand-cyan) !important;
+  text-shadow: 0 0 16px rgba(56, 189, 248, 0.4) !important;
+}
+
+/* 10. Footer & Misc Panels */
+.site-footer {
+  background: #090a0d !important;
+  border-top: 1px solid var(--line) !important;
+  color: var(--muted) !important;
+}
+
+.cart-panel {
+  background: #11141e !important;
+  border-left: 1px solid var(--line) !important;
+}
+
+.cart-header, .cart-footer {
+  border-color: var(--line) !important;
+}
+
+.cart-footer button {
+  background: var(--brand-cyan) !important;
+  color: #0d0e12 !important;
+  font-weight: 700 !important;
+}
+
+.cart-footer button:hover {
+  background: #7dd3fc !important;
 }
 
