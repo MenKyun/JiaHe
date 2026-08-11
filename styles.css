@@ -9044,35 +9044,58 @@ body, html {
   background: #0071e3 !important;
 }
 
-/* 4. Hero Section */
+/* 4. Hero Section — dark photo hero keeps white text */
 .storefront-page .hero {
-  background: #ffffff !important;
-  border: 1px solid rgba(0, 0, 0, 0.08) !important;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08) !important;
+  color: #ffffff !important;
+  border: none !important;
   border-radius: 28px !important;
 }
 
 .storefront-page .hero h1 {
-  background: linear-gradient(135deg, #1d1d1f 30%, #424245 100%) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+.storefront-page .hero .eyebrow {
+  color: #2997ff !important;
+}
+
+.storefront-page .hero-copy {
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .storefront-page .hero .primary-link {
   background: #0071e3 !important;
   color: #ffffff !important;
-  border: none !important;
-  box-shadow: 0 8px 24px rgba(0, 113, 227, 0.3) !important;
+  border-color: #0071e3 !important;
 }
 
 .storefront-page .hero .primary-link:hover {
-  background: #0077ed !important;
-  box-shadow: 0 12px 32px rgba(0, 113, 227, 0.45) !important;
+  background: #ffffff !important;
+  color: #1d1d1f !important;
+  border-color: #ffffff !important;
+}
+
+.storefront-page .hero .secondary-link,
+.storefront-page .hero-actions .text-link {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.storefront-page .hero .secondary-link:hover,
+.storefront-page .hero-actions .text-link:hover {
+  background: #ffffff !important;
+  color: #1d1d1f !important;
 }
 
 .hero-specs strong {
-  color: #0071e3 !important;
-  text-shadow: none !important;
+  color: #ffffff !important;
+}
+
+.hero-specs span {
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 
 /* 5. Service Strip & Campaign Band */
