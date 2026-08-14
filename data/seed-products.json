@@ -1,20 +1,17 @@
-// Auto-generated from TR.tw Excel files. Do not edit by hand.
-(function () {
-  const storageKey = "goodLifeMallProducts";
-  const importedProducts = [
+[
   {
     "id": "TR-54805434847",
-    "sourceProductId": "54805434847",
     "name": "隔日到貨 丟丟自拍棒 落地自動打開 180cm丟丟桿 一體式腳架 無線藍牙遙控器 夾頭360度旋轉 鋁合金伸縮自拍棒",
-    "category": "????",
-    "sourceCategory": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
+    "display_name": "180cm 丟丟自動開腳自拍棒",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 978,
-    "originalPrice": 978,
-    "badge": "TR ??",
-    "desc": "產品資訊\n名稱：丟丟自拍桿\n直播支架自拍桿\n拉伸長度 32.7cm-1.8米\n產品淨重 約0.55kg\n電壓 4.2V\n藍牙名稱 LAIGI\n電池容量 55mAh",
+    "original_price": 978,
+    "badge": "TR 精選",
+    "description": "產品資訊\n名稱：丟丟自拍桿\n直播支架自拍桿\n拉伸長度 32.7cm-1.8米\n產品淨重 約0.55kg\n電壓 4.2V\n藍牙名稱 LAIGI\n電池容量 55mAh",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "54805434847",
+    "source_category": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mk0n9yvi7ncyf4",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mk0na13n4a9zc2",
@@ -26,7 +23,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mk0na16f4ft334",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mk0na18f6uq0cd"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztp-mk0npczgg7wj01",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81zth-mk0npczl3dhce5",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-mk0npczp18uaae",
@@ -47,6 +44,7 @@
         "value": "1.8米丟丟棒-黑色",
         "price": 978,
         "originalPrice": 978,
+        "discount": 0,
         "stock": 352,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mk0on9sqg1z883",
@@ -59,26 +57,29 @@
         "value": "1.8米丟丟棒-黑色+方形燈*1",
         "price": 1198,
         "originalPrice": 1198,
+        "discount": 0,
         "stock": 452,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mk0oncrlpbm0bd",
         "link": "https://shopee.tw/product/596688391/54805434847?variationId=420495871096"
       }
-    ]
+    ],
+    "active": true,
+    "position": 0
   },
   {
     "id": "TR-50862649366",
-    "sourceProductId": "50862649366",
     "name": "手機磁吸+手機夾散熱器 半導體散熱 快速製冷 散熱風扇 手機散熱風扇 直播遊戲 平板散熱器 可搭配腳架使用 4/1螺絲",
-    "category": "????",
-    "sourceCategory": "100291 - Mobile & Gadgets/Accessories/Others",
+    "display_name": "磁吸半導體手機散熱器",
+    "category": "行動配件",
     "brand": "TR.tw",
     "price": 938,
-    "originalPrice": 938,
-    "badge": "TR ??",
-    "desc": "手機磁吸+手機夾散熱器 半導體散熱 快速製冷 散熱風扇 手機散熱風扇 直播遊戲 平板散熱器 可搭配腳架使用 4/1螺絲",
+    "original_price": 938,
+    "badge": "TR 精選",
+    "description": "手機磁吸+手機夾散熱器 半導體散熱 快速製冷 散熱風扇 手機散熱風扇 直播遊戲 平板散熱器 可搭配腳架使用 4/1螺絲",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "50862649366",
+    "source_category": "100291 - Mobile & Gadgets/Accessories/Others",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mpt0p0dvl0cg45",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mpt0s9li3sao99",
@@ -89,7 +90,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mpt471j85lhr50",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mpt471j9tzwsb8"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lb-mpt4dcf2o2dc98",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l6-mpt4dcezb9j506",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l5-mpt4dcezco3ld8",
@@ -111,26 +112,29 @@
         "value": "散熱器",
         "price": 938,
         "originalPrice": 938,
+        "discount": 0,
         "stock": 50,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820li-mpt4el1730gc64",
         "link": "https://shopee.tw/product/596688391/50862649366?variationId=316099531196"
       }
-    ]
+    ],
+    "active": true,
+    "position": 1
   },
   {
     "id": "TR-43553081646",
-    "sourceProductId": "43553081646",
     "name": "鋁合金 迷你磁吸助拍器 M1迷你自拍棒 磁吸夾式兩用自拍棒 迷你四腳支架 三合一藍芽自拍棒 迷你攝影支架 自拍神器",
-    "category": "????",
-    "sourceCategory": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
+    "display_name": "M1 迷你磁吸自拍腳架",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 598,
-    "originalPrice": 598,
-    "badge": "TR ??",
-    "desc": "鋁合金 迷你磁吸助拍器 M1迷你自拍棒 磁吸夾式兩用自拍棒 迷你四腳支架 三合一藍芽自拍棒 迷你攝影支架 自拍神器",
+    "original_price": 598,
+    "badge": "TR 精選",
+    "description": "鋁合金 迷你磁吸助拍器 M1迷你自拍棒 磁吸夾式兩用自拍棒 迷你四腳支架 三合一藍芽自拍棒 迷你攝影支架 自拍神器",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "43553081646",
+    "source_category": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mojiwu5jcnb546",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mhiqr1sfnmdf9e",
@@ -142,7 +146,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztd-mhiqr3967rb77e",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mhiqr6u7czyg79"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rbk9-majnxb2xcp5kd3",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rbk4-majnxb3gwfkma4",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rbk9-majnxb36wuagc1",
@@ -162,6 +166,7 @@
         "value": "鋁合金-白色+登山扣+雙燈",
         "price": 718,
         "originalPrice": 718,
+        "discount": 0,
         "stock": 47,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ra0g-mbynqgn7u1x58d",
@@ -174,6 +179,7 @@
         "value": "mini磁吸款-白色-無燈",
         "price": 718,
         "originalPrice": 718,
+        "discount": 0,
         "stock": 46,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mhiqx2r1q9kw68",
@@ -186,6 +192,7 @@
         "value": "鋁合金-白色+登山扣",
         "price": 598,
         "originalPrice": 598,
+        "discount": 0,
         "stock": 45,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ra0p-mbynqmxcn4u15b",
@@ -198,6 +205,7 @@
         "value": "鋁合金-粉色+登山扣",
         "price": 598,
         "originalPrice": 598,
+        "discount": 0,
         "stock": 49,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ra0h-mbynqr7wcz0995",
@@ -210,6 +218,7 @@
         "value": "鋁合金-黑色+登山扣",
         "price": 598,
         "originalPrice": 598,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ra0n-mbynpciqjujtfc",
@@ -222,6 +231,7 @@
         "value": "鋁合金-黑色+登山扣+雙燈",
         "price": 718,
         "originalPrice": 718,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ra0l-mbynpfhu73myaf",
@@ -234,6 +244,7 @@
         "value": "mini磁吸款-黑色-雙小燈",
         "price": 878,
         "originalPrice": 878,
+        "discount": 0,
         "stock": 50,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mhiqwtzyadc1bf",
@@ -246,6 +257,7 @@
         "value": "鋁合金-粉色+登山扣+雙燈",
         "price": 718,
         "originalPrice": 718,
+        "discount": 0,
         "stock": 48,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ra0p-mbynqtjyxyea9a",
@@ -258,6 +270,7 @@
         "value": "mini磁吸款-黑色-無燈",
         "price": 718,
         "originalPrice": 718,
+        "discount": 0,
         "stock": 49,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mhiqwsjpr6rn91",
@@ -270,30 +283,33 @@
         "value": "mini磁吸款-白色-雙小燈",
         "price": 878,
         "originalPrice": 878,
+        "discount": 0,
         "stock": 48,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mhiqx57tui2q06",
         "link": "https://shopee.tw/product/596688391/43553081646?variationId=355207020152"
       }
-    ]
+    ],
+    "active": true,
+    "position": 2
   },
   {
     "id": "TR-42379553092",
-    "sourceProductId": "42379553092",
     "name": "TOOREA 自拍棒收納袋",
-    "category": "????",
-    "sourceCategory": "101262 - Home & Living/Home Organizers/Others",
+    "display_name": "TOOREA 自拍棒收納袋",
+    "category": "行動配件",
     "brand": "TR.tw",
     "price": 70,
-    "originalPrice": 70,
-    "badge": "TR ??",
-    "desc": "TOOREA 自拍棒收納袋",
+    "original_price": 70,
+    "badge": "TR 精選",
+    "description": "TOOREA 自拍棒收納袋",
     "mark": "TR",
-    "parentSku": "ZP001",
+    "source_product_id": "42379553092",
+    "source_category": "101262 - Home & Living/Home Organizers/Others",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mmbh4cw553wg6b"
     ],
-    "detailImages": [],
+    "detail_images": [],
     "videos": [],
     "variants": [
       {
@@ -303,26 +319,29 @@
         "value": "????",
         "price": 70,
         "originalPrice": 70,
+        "discount": 0,
         "stock": 293,
         "leadTime": "1",
         "image": "",
         "link": "https://shopee.tw/product/596688391/42379553092?variationId=325692407102"
       }
-    ]
+    ],
+    "active": true,
+    "position": 3
   },
   {
     "id": "TR-42052534861",
-    "sourceProductId": "42052534861",
     "name": "Magsafe磁吸補光燈 口袋補光燈 手機磁吸補光燈 腳架補光燈 自拍補光燈 磁吸補光燈 4/1螺紋 夾式補光燈",
-    "category": "????",
-    "sourceCategory": "100276 - Mobile & Gadgets/Accessories/Mobile Flashes & Selfie Lights",
+    "display_name": "MagSafe 磁吸口袋補光燈",
+    "category": "補光設備",
     "brand": "TR.tw",
     "price": 538,
-    "originalPrice": 538,
-    "badge": "TR ??",
-    "desc": "Magsafe磁吸補光燈 口袋補光燈 手機磁吸補光燈 腳架補光燈 自拍補光燈 磁吸補光燈 4/1螺紋 夾式補光燈",
+    "original_price": 538,
+    "badge": "TR 精選",
+    "description": "Magsafe磁吸補光燈 口袋補光燈 手機磁吸補光燈 腳架補光燈 自拍補光燈 磁吸補光燈 4/1螺紋 夾式補光燈",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "42052534861",
+    "source_category": "100276 - Mobile & Gadgets/Accessories/Mobile Flashes & Selfie Lights",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbkc-machihnqlm5y43",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbk1-machi16ir4hi31",
@@ -332,7 +351,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbkb-machi17wnoxl63",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbk0-maciazf7ip944d"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rbk8-machhx72jn1y3b",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rbk5-machhx6sk1o689",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rbk7-machhx6sk1rt28",
@@ -349,6 +368,7 @@
         "value": "方形",
         "price": 538,
         "originalPrice": 538,
+        "discount": 0,
         "stock": 92,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbk2-machjuep9fueba",
@@ -361,26 +381,29 @@
         "value": "長方形",
         "price": 638,
         "originalPrice": 638,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbk0-machjqusgmeud1",
         "link": "https://shopee.tw/product/596688391/42052534861?variationId=265210362555"
       }
-    ]
+    ],
+    "active": true,
+    "position": 4
   },
   {
     "id": "TR-41868169513",
-    "sourceProductId": "41868169513",
     "name": "160CM 插地款鋁合金三腳架 手機三腳架 地釘式 三腳自拍棒 手持自拍桿 相機腳架 手動旋轉雲台 充電式藍牙遙控器",
-    "category": "????",
-    "sourceCategory": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
+    "display_name": "160cm 戶外插地三腳架",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 958,
-    "originalPrice": 958,
-    "badge": "TR ??",
-    "desc": "遙控器型號：T12\nNCC認證字號：CCAJ24LP5790T9",
+    "original_price": 958,
+    "badge": "TR 精選",
+    "description": "遙控器型號：T12\nNCC認證字號：CCAJ24LP5790T9",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "41868169513",
+    "source_category": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mgvyn9sx8gssc1",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mefcwyh88d1id2",
@@ -392,7 +415,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-mefcx3us81z6ce",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mefcx3wm8qv791"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztc-mefd2xcrxdz8a8",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81zti-mefd2xcq4ruq47",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztm-mefd2xcq66f673",
@@ -414,6 +437,7 @@
         "value": "160cm黑色地釘自拍棒-無燈+收納袋",
         "price": 958,
         "originalPrice": 958,
+        "discount": 0,
         "stock": 89,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mefd8mf5ryfb10",
@@ -426,6 +450,7 @@
         "value": "160cm黑色地釘自拍棒-單大燈+收納袋",
         "price": 1138,
         "originalPrice": 1138,
+        "discount": 0,
         "stock": 100,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-metodtqjhblt36",
@@ -438,6 +463,7 @@
         "value": "160cm粉色地釘自拍棒-雙大燈+收納袋",
         "price": 1318,
         "originalPrice": 1318,
+        "discount": 0,
         "stock": 98,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-mes1xzttvy85df",
@@ -450,6 +476,7 @@
         "value": "160cm黑色地釘自拍棒-雙大燈+收納袋",
         "price": 1318,
         "originalPrice": 1318,
+        "discount": 0,
         "stock": 99,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mefd8qlcvh1d23",
@@ -462,6 +489,7 @@
         "value": "160cm黑色地釘自拍棒-雙小燈+收納袋",
         "price": 1118,
         "originalPrice": 1118,
+        "discount": 0,
         "stock": 100,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mefd8p1x5q12b7",
@@ -474,6 +502,7 @@
         "value": "160cm粉色地釘自拍棒-無燈+收納袋",
         "price": 958,
         "originalPrice": 958,
+        "discount": 0,
         "stock": 95,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mes1xndljcoz9b",
@@ -486,6 +515,7 @@
         "value": "160cm黑色地釘自拍棒-單小燈+收納袋",
         "price": 1038,
         "originalPrice": 1038,
+        "discount": 0,
         "stock": 100,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-metodsbn239j05",
@@ -498,6 +528,7 @@
         "value": "160cm粉色地釘自拍棒-單大燈+收納袋",
         "price": 1138,
         "originalPrice": 1138,
+        "discount": 0,
         "stock": 100,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mes1xwcbo2yo5a",
@@ -510,6 +541,7 @@
         "value": "160cm粉色地釘自拍棒-雙小燈+收納袋",
         "price": 1118,
         "originalPrice": 1118,
+        "discount": 0,
         "stock": 99,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mes1xtakl05eda",
@@ -522,26 +554,29 @@
         "value": "160cm粉色地釘自拍棒-單小燈+收納袋",
         "price": 1038,
         "originalPrice": 1038,
+        "discount": 0,
         "stock": 100,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-mes1xp282mtd27",
         "link": "https://shopee.tw/product/596688391/41868169513?variationId=128417175580"
       }
-    ]
+    ],
+    "active": true,
+    "position": 5
   },
   {
     "id": "TR-29555157903",
-    "sourceProductId": "29555157903",
     "name": "臺北現貨 手機自拍棒腳架 170CM伸縮自拍棒 GoPro/相機腳架 手機自拍桿 直播三腳架 手機支架 藍牙遙控 補光燈",
-    "category": "????",
-    "sourceCategory": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
+    "display_name": "170cm 直播補光自拍腳架",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 359,
-    "originalPrice": 359,
-    "badge": "TR ??",
-    "desc": "購物須知：\n🛍下單金額需要滿50元（不含運費的50元）才會出貨。\n🛍賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n🛍下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n🛍本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n🛍鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n🛍遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n🛍因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n🛍請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n🛍用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
+    "original_price": 359,
+    "badge": "TR 精選",
+    "description": "購物須知：\n🛍下單金額需要滿50元（不含運費的50元）才會出貨。\n🛍賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n🛍下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n🛍本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n🛍鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n🛍遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n🛍因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n🛍請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n🛍用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "29555157903",
+    "source_category": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mgn3w7ali8ej12",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbk4-m6nhj72qjxco5f",
@@ -553,7 +588,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbk3-m6nhj72qfpncc7",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbk6-m6nhj72qh3z6dd"
     ],
-    "detailImages": [],
+    "detail_images": [],
     "videos": [],
     "variants": [
       {
@@ -563,6 +598,7 @@
         "value": "七鍵遙控粉色-170cm三腳架-雙燈",
         "price": 359,
         "originalPrice": 359,
+        "discount": 0,
         "stock": 472,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbkd-m6nhmv03dnb33a",
@@ -575,6 +611,7 @@
         "value": "七鍵遙控紫色-170cm三腳架-無燈",
         "price": 399,
         "originalPrice": 399,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbkd-m6nhn1rfhk2s3e",
@@ -587,6 +624,7 @@
         "value": "七鍵遙控紫色-170cm三腳架-雙燈",
         "price": 439,
         "originalPrice": 439,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbke-m6nhn3yi9u0v2e",
@@ -599,6 +637,7 @@
         "value": "七鍵遙控黑色-170cm三腳架-無燈",
         "price": 359,
         "originalPrice": 359,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbk6-m6nhmouee2n8ce",
@@ -611,6 +650,7 @@
         "value": "七鍵遙控黑色-170cm三腳架-雙燈",
         "price": 399,
         "originalPrice": 399,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbka-m6nhmq8mcksfea",
@@ -623,26 +663,29 @@
         "value": "七鍵遙控粉色-170cm三腳架-無燈",
         "price": 439,
         "originalPrice": 439,
+        "discount": 0,
         "stock": 463,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbk1-m6nhmta7w738a9",
         "link": "https://shopee.tw/product/596688391/29555157903?variationId=215236416900"
       }
-    ]
+    ],
+    "active": true,
+    "position": 6
   },
   {
     "id": "TR-28816260078",
-    "sourceProductId": "28816260078",
     "name": "TR 不鏽鋼 四腳自拍棒 自拍神器 三腳自拍棒 充電式藍牙遙控器 180CM手機腳架 手持自拍桿 相機腳架 手動旋轉雲台",
-    "category": "????",
-    "sourceCategory": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
+    "display_name": "180cm 不鏽鋼四腳自拍棒",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 958,
-    "originalPrice": 958,
-    "badge": "TR ??",
-    "desc": "遙控器型號：T12\nNCC認證字號：CCAJ24LP5790T9\n購物須知：\n🛍下單金額需要滿50元（不含運費的50元）才會出貨。\n🛍賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n🛍下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n🛍本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n🛍鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n🛍遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n🛍因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n🛍請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n🛍用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
+    "original_price": 958,
+    "badge": "TR 精選",
+    "description": "遙控器型號：T12\nNCC認證字號：CCAJ24LP5790T9\n購物須知：\n🛍下單金額需要滿50元（不含運費的50元）才會出貨。\n🛍賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n🛍下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n🛍本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n🛍鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n🛍遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n🛍因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n🛍請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n🛍用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "28816260078",
+    "source_category": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l5-mnfg5vzql62rf5",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mnfg5y6utf5w93",
@@ -654,7 +697,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mnfg5y71dekla3",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l8-mnfg5y7d70n4ca"
     ],
-    "detailImages": [],
+    "detail_images": [],
     "videos": [],
     "variants": [
       {
@@ -664,6 +707,7 @@
         "value": "160cm黑色地釘自拍棒-雙大燈+收納袋",
         "price": 1919,
         "originalPrice": 1919,
+        "discount": 0,
         "stock": 195,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mnfgnffjw0762c",
@@ -676,6 +720,7 @@
         "value": "160cm粉色地釘自拍棒-無燈+收納袋",
         "price": 1598,
         "originalPrice": 1598,
+        "discount": 0,
         "stock": 196,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mnfgna0vv4lf39",
@@ -688,6 +733,7 @@
         "value": "1.8M鋁合金腳架-無燈",
         "price": 1649,
         "originalPrice": 1649,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-me5edtawbt3ac2",
@@ -700,6 +746,7 @@
         "value": "1.8M不銹鋼腳架-無燈",
         "price": 1499,
         "originalPrice": 1499,
+        "discount": 0,
         "stock": 116,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-me5ede9lyz9f9f",
@@ -712,6 +759,7 @@
         "value": "跟拍雲台（可拆卸）+腳架 普通遙控器",
         "price": 999,
         "originalPrice": 999,
+        "discount": 0,
         "stock": 20,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lf-mp3jjgm1dfdb2c",
@@ -724,6 +772,7 @@
         "value": "1.8M鋁合金腳架-雙小燈",
         "price": 1739,
         "originalPrice": 1739,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-me5edvxmqghve8",
@@ -736,6 +785,7 @@
         "value": "1.8M不銹鋼腳架-雙大燈",
         "price": 1749,
         "originalPrice": 1749,
+        "discount": 0,
         "stock": 187,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztk-me5edknghudf08",
@@ -748,6 +798,7 @@
         "value": "跟拍雲台（可拆卸）+腳架 變焦遙控器",
         "price": 1099,
         "originalPrice": 1099,
+        "discount": 0,
         "stock": 50,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mp3jjqxpjdhr4b",
@@ -760,6 +811,7 @@
         "value": "160cm粉色地釘自拍棒-雙大燈+收納袋",
         "price": 958,
         "originalPrice": 958,
+        "discount": 0,
         "stock": 198,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mnfgnkmkslj916",
@@ -772,6 +824,7 @@
         "value": "磁吸雙機位1.8m人脸跟拍四腳架-雙大燈",
         "price": 1839,
         "originalPrice": 1839,
+        "discount": 0,
         "stock": 99,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mnxz1krj8tty23",
@@ -784,6 +837,7 @@
         "value": "1.8M不銹鋼腳架-雙小燈",
         "price": 1599,
         "originalPrice": 1599,
+        "discount": 0,
         "stock": 181,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-me5edhdupz4510",
@@ -796,6 +850,7 @@
         "value": "160cm粉色地釘自拍棒-雙小燈+收納袋",
         "price": 1750,
         "originalPrice": 1750,
+        "discount": 0,
         "stock": 198,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mnfgni38wlc382",
@@ -808,6 +863,7 @@
         "value": "磁吸雙機位1.8m人脸跟拍四腳架-雙小燈",
         "price": 1718,
         "originalPrice": 1718,
+        "discount": 0,
         "stock": 98,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mnxz1egnmqrm37",
@@ -820,6 +876,7 @@
         "value": "160cm黑色地釘自拍棒-無燈+收納袋",
         "price": 1650,
         "originalPrice": 1650,
+        "discount": 0,
         "stock": 181,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mnfgfjuyeqklfc",
@@ -832,6 +889,7 @@
         "value": "1.8M鋁合金腳架-雙大燈",
         "price": 1919,
         "originalPrice": 1919,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zto-me5edydx0rgkb6",
@@ -844,6 +902,7 @@
         "value": "黑色-鋁合金四腳架+正方形磁吸燈",
         "price": 1119,
         "originalPrice": 1119,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l9-mnfgcf95iio58e",
@@ -856,6 +915,7 @@
         "value": "160cm黑色地釘自拍棒-雙小燈+收納袋",
         "price": 1750,
         "originalPrice": 1750,
+        "discount": 0,
         "stock": 194,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mnfgncl4svsyd5",
@@ -868,26 +928,29 @@
         "value": "磁吸雙機位1.8m人脸跟拍四腳架-無燈",
         "price": 1598,
         "originalPrice": 1598,
+        "discount": 0,
         "stock": 95,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mnxz0jp9h3b70c",
         "link": "https://shopee.tw/product/596688391/28816260078?variationId=440787477901"
       }
-    ]
+    ],
+    "active": true,
+    "position": 7
   },
   {
     "id": "TR-28069464564",
-    "sourceProductId": "28069464564",
     "name": "一體式180CM藍牙自拍棒 帶冷靴口 鋁合金三腳架 自拍棒 自拍腳架 手機攝影腳架 直播架 磁吸收納腳架 補光燈",
-    "category": "????",
-    "sourceCategory": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
+    "display_name": "180cm 冷靴口鋁合金自拍腳架",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 1198,
-    "originalPrice": 1198,
-    "badge": "TR ??",
-    "desc": "一體式180CM藍牙自拍棒 帶冷靴口 鋁合金三腳架 自拍棒 自拍腳架 手機攝影腳架 直播架 磁吸收納腳架 補光燈",
+    "original_price": 1198,
+    "badge": "TR 精選",
+    "description": "一體式180CM藍牙自拍棒 帶冷靴口 鋁合金三腳架 自拍棒 自拍腳架 手機攝影腳架 直播架 磁吸收納腳架 補光燈",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "28069464564",
+    "source_category": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rash-m6560obxdog187",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ras8-m3aiw3jid4yf3a",
@@ -898,7 +961,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasd-m3aiw3kcbx3rd7",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasa-m3aiw3kmbihj16"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rasg-m3aj8lzx6dsn5b",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rask-m3aj8lzx7sd372",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rasi-m3aj8lzx96xjce",
@@ -921,6 +984,7 @@
         "value": "磨砂粉-1.6米腳架-1個補光燈",
         "price": 1398,
         "originalPrice": 1398,
+        "discount": 0,
         "stock": 497,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rask-m4k4iq6hn0gtff",
@@ -933,6 +997,7 @@
         "value": "黑銀色-1.8米腳架",
         "price": 1198,
         "originalPrice": 1198,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ras9-m3ajdysf1t1z65",
@@ -945,26 +1010,29 @@
         "value": "黑銀色-1.8米腳架-1個補光燈",
         "price": 1398,
         "originalPrice": 1398,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rask-m3aje01x77tj7b",
         "link": "https://shopee.tw/product/596688391/28069464564?variationId=257166078752"
       }
-    ]
+    ],
+    "active": true,
+    "position": 8
   },
   {
     "id": "TR-27773165390",
-    "sourceProductId": "27773165390",
     "name": "藍芽遙控器補光燈下單連結 僅適配小店所販售之商品 下單前請聊聊咨詢",
-    "category": "????",
-    "sourceCategory": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
+    "display_name": "藍牙遙控器／補光燈配件",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 50,
-    "originalPrice": 50,
-    "badge": "TR ??",
-    "desc": "藍芽遙控器補光燈下單連結 僅適配小店所販售之商品 下單前請聊聊咨詢",
+    "original_price": 50,
+    "badge": "TR 精選",
+    "description": "藍芽遙控器補光燈下單連結 僅適配小店所販售之商品 下單前請聊聊咨詢",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "27773165390",
+    "source_category": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasi-m4u0igwbbcqe39",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasf-m4u0igwbbdeea9",
@@ -972,7 +1040,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasj-m4u0ind3uphy2f",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasf-m4u0inehu2baf9"
     ],
-    "detailImages": [],
+    "detail_images": [],
     "videos": [],
     "variants": [
       {
@@ -982,6 +1050,7 @@
         "value": "粉色大燈",
         "price": 120,
         "originalPrice": 120,
+        "discount": 0,
         "stock": 499,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mmbgu8kj0c1x70",
@@ -994,6 +1063,7 @@
         "value": "黑色大燈",
         "price": 120,
         "originalPrice": 120,
+        "discount": 0,
         "stock": 498,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasf-m4u0l0ll4e81c7",
@@ -1006,6 +1076,7 @@
         "value": "C12人臉跟拍-手機夾頭備件",
         "price": 60,
         "originalPrice": 60,
+        "discount": 0,
         "stock": 20,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbk0-m6ga7asiso2s3a",
@@ -1018,6 +1089,7 @@
         "value": "邊充邊用線-安卓type-c",
         "price": 160,
         "originalPrice": 160,
+        "discount": 0,
         "stock": 29,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ra0m-mcvhqt12jdj37d",
@@ -1030,6 +1102,7 @@
         "value": "黑色小燈",
         "price": 60,
         "originalPrice": 60,
+        "discount": 0,
         "stock": 500,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasm-m4u0kvl8gbgh81",
@@ -1042,6 +1115,7 @@
         "value": "A/B17四脚架-手機夾頭配件",
         "price": 60,
         "originalPrice": 60,
+        "discount": 0,
         "stock": 5,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbk8-m6gacr7pcsrcf3",
@@ -1054,6 +1128,7 @@
         "value": "粉色小燈",
         "price": 60,
         "originalPrice": 60,
+        "discount": 0,
         "stock": 500,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasj-m4u0kwxihoeld1",
@@ -1066,6 +1141,7 @@
         "value": "邊充邊用線-蘋果lighting",
         "price": 160,
         "originalPrice": 160,
+        "discount": 0,
         "stock": 58,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ra0k-mcvhr3h1973z35",
@@ -1078,6 +1154,7 @@
         "value": "粉色遙控器",
         "price": 50,
         "originalPrice": 50,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasl-m4u0l5vne9dtd3",
@@ -1090,26 +1167,29 @@
         "value": "黑色遙控器",
         "price": 50,
         "originalPrice": 50,
+        "discount": 0,
         "stock": 19,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasa-m4u0l4djlg3xe4",
         "link": "https://shopee.tw/product/596688391/27773165390?variationId=252442652428"
       }
-    ]
+    ],
+    "active": true,
+    "position": 9
   },
   {
     "id": "TR-27418889395",
-    "sourceProductId": "27418889395",
     "name": "2米藍芽自拍棒 手機三腳架 附冷靴口 磁吸收納 手機直播腳架 伸縮自拍棒 GoPro 相機腳架 手機自拍桿 藍牙遙控器",
-    "category": "????",
-    "sourceCategory": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
+    "display_name": "200cm 冷靴口直播自拍腳架",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 998,
-    "originalPrice": 998,
-    "badge": "TR ??",
-    "desc": "2米藍芽自拍棒 手機三腳架 附冷靴口 磁吸收納 手機直播腳架 伸縮自拍棒 GoPro 相機腳架 手機自拍桿 藍牙遙控器",
+    "original_price": 998,
+    "badge": "TR 精選",
+    "description": "2米藍芽自拍棒 手機三腳架 附冷靴口 磁吸收納 手機直播腳架 伸縮自拍棒 GoPro 相機腳架 手機自拍桿 藍牙遙控器",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "27418889395",
+    "source_category": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rask-m34tmi1whq7d33",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ras9-m32xhyeuks5n52",
@@ -1120,7 +1200,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasl-m32xi28gzdyj7e",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rase-m367jgvf9s7u0d"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rasj-m32y6dvrqhe333",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rasc-m32y6dvrrvyj17",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7ras9-m32y6dvrtaize5",
@@ -1141,6 +1221,7 @@
         "value": "2m腳架-無燈",
         "price": 1438,
         "originalPrice": 1438,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rase-m32yfybdjkx0ab",
@@ -1153,6 +1234,7 @@
         "value": "2m腳架-單燈",
         "price": 1578,
         "originalPrice": 1578,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasl-m32yg0ky87fob5",
@@ -1165,6 +1247,7 @@
         "value": "2m腳架-雙燈",
         "price": 1718,
         "originalPrice": 1718,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasi-m32yg3l5tup044",
@@ -1177,6 +1260,7 @@
         "value": "1.8m腳架-無燈",
         "price": 998,
         "originalPrice": 998,
+        "discount": 0,
         "stock": 32,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasa-m32ygaau071g9c",
@@ -1189,6 +1273,7 @@
         "value": "1.8m腳架-單燈",
         "price": 1158,
         "originalPrice": 1158,
+        "discount": 0,
         "stock": 34,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasd-m32ygc23fmas53",
@@ -1201,26 +1286,29 @@
         "value": "1.8m腳架-雙燈",
         "price": 1318,
         "originalPrice": 1318,
+        "discount": 0,
         "stock": 30,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ras8-m32ygdp714tge9",
         "link": "https://shopee.tw/product/596688391/27418889395?variationId=252127976595"
       }
-    ]
+    ],
+    "active": true,
+    "position": 10
   },
   {
     "id": "TR-26718905013",
-    "sourceProductId": "26718905013",
     "name": "一體式1.8米藍芽自拍棒 手機三腳架 附冷靴口 手機直播腳架 伸縮自拍棒 手機腳架 手機自拍桿 藍牙遙控器 手持雲台",
-    "category": "????",
-    "sourceCategory": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
+    "display_name": "180cm 一體式藍牙自拍腳架",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 998,
-    "originalPrice": 998,
-    "badge": "TR ??",
-    "desc": "一體式1.8米藍芽自拍棒 手機三腳架 附冷靴口 手機直播腳架 伸縮自拍棒 手機腳架 手機自拍桿 藍牙遙控器 手持雲台",
+    "original_price": 998,
+    "badge": "TR 精選",
+    "description": "一體式1.8米藍芽自拍棒 手機三腳架 附冷靴口 手機直播腳架 伸縮自拍棒 手機腳架 手機自拍桿 藍牙遙控器 手持雲台",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "26718905013",
+    "source_category": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasa-m3admcx66u6v29",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ras8-m32yoi8wx8kkc6",
@@ -1232,7 +1320,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasa-m32yoiciryjo94",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasi-m32yoie6piucbb"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rase-m32y6dvrqhd7ed",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7ras9-m32y6dvrrvxn5f",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rasa-m32y6dvrtai32f",
@@ -1251,6 +1339,7 @@
         "value": "1.8m腳架-雙燈",
         "price": 1318,
         "originalPrice": 1318,
+        "discount": 0,
         "stock": 91,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ras8-m32ygdp714tge9",
@@ -1263,6 +1352,7 @@
         "value": "2m腳架-無燈",
         "price": 1438,
         "originalPrice": 1438,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rase-m32yfybdjkx0ab",
@@ -1275,6 +1365,7 @@
         "value": "2m腳架-單燈",
         "price": 1578,
         "originalPrice": 1578,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasl-m32yg0ky87fob5",
@@ -1287,6 +1378,7 @@
         "value": "2m腳架-雙燈",
         "price": 1718,
         "originalPrice": 1718,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasi-m32yg3l5tup044",
@@ -1299,6 +1391,7 @@
         "value": "1.8m腳架-無燈",
         "price": 998,
         "originalPrice": 998,
+        "discount": 0,
         "stock": 64,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasa-m32ygaau071g9c",
@@ -1311,26 +1404,29 @@
         "value": "1.8m腳架-單燈",
         "price": 1158,
         "originalPrice": 1158,
+        "discount": 0,
         "stock": 98,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasd-m32ygc23fmas53",
         "link": "https://shopee.tw/product/596688391/26718905013?variationId=242128150626"
       }
-    ]
+    ],
+    "active": true,
+    "position": 11
   },
   {
     "id": "TR-26221879038",
-    "sourceProductId": "26221879038",
     "name": "鋁合金一體式 藍芽自拍棒160CM 隱藏式腳架夾頭 自拍桿 三腳架鋁合金 自拍腳架 自拍神器 補光燈 手機腳架 手機攝影",
-    "category": "????",
-    "sourceCategory": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
+    "display_name": "160cm 隱藏式鋁合金自拍腳架",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 1198,
-    "originalPrice": 1198,
-    "badge": "TR ??",
-    "desc": "鋁合金一體式 藍芽自拍棒160CM 隱藏式腳架夾頭 自拍桿 三腳架鋁合金 自拍腳架 自拍神器 補光燈 手機腳架 手機攝影",
+    "original_price": 1198,
+    "badge": "TR 精選",
+    "description": "鋁合金一體式 藍芽自拍棒160CM 隱藏式腳架夾頭 自拍桿 三腳架鋁合金 自拍腳架 自拍神器 補光燈 手機腳架 手機攝影",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "26221879038",
+    "source_category": "100477 - Mobile & Gadgets/Accessories/Selfie Accessories/Remote Shutters",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasd-m655y9sk0ldi91",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasg-m49swx3qhunb20",
@@ -1342,7 +1438,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasb-m49swx3qm2cn38",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rash-m49swx3qj8u856"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7rasf-m49syhvjexorbd",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7ras9-m49syhvjhqtn52",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7ras8-m49syhvjj5e34c",
@@ -1363,6 +1459,7 @@
         "value": "黑銀色-1.8米腳架-無燈",
         "price": 1198,
         "originalPrice": 1198,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasi-m49t78tuir1jb8",
@@ -1375,6 +1472,7 @@
         "value": "黑銀色-1.8米腳架-1個補光燈",
         "price": 1398,
         "originalPrice": 1398,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rask-m49t79ywunb429",
@@ -1387,26 +1485,29 @@
         "value": "160公分-磨砂粉-單燈",
         "price": 1198,
         "originalPrice": 1198,
+        "discount": 0,
         "stock": 16,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ras9-m49t6wpy8mf436",
         "link": "https://shopee.tw/product/596688391/26221879038?variationId=257352198025"
       }
-    ]
+    ],
+    "active": true,
+    "position": 12
   },
   {
     "id": "TR-25953040400",
-    "sourceProductId": "25953040400",
     "name": "180CM鋁合金 磁吸藍芽自拍棒四腳架  雙機位旋轉雲臺 手機自拍神器 自拍三腳架 相機四腳架 無線藍牙遙控器 補光燈",
-    "category": "????",
-    "sourceCategory": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
+    "display_name": "180cm 雙機位磁吸四腳架",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 580,
-    "originalPrice": 580,
-    "badge": "TR ??",
-    "desc": "購物須知：\n🛍賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n🛍下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n🛍本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n🛍鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n🛍遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n🛍因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n🛍請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n🛍用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
+    "original_price": 580,
+    "badge": "TR 精選",
+    "description": "購物須知：\n🛍賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n🛍下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n🛍本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n🛍鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n🛍遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n🛍因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n🛍請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n🛍用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "25953040400",
+    "source_category": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mldcox21fhmoab",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mh1rjt1pl7uwd1",
@@ -1418,7 +1519,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98x-lx274rzsr3mu06",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98v-lx274rzsoahya2"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztk-mh1rp729acqxa1",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztq-mh1rp74ps4qze2",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztp-mh1rp72cg4qy40",
@@ -1440,6 +1541,7 @@
         "value": "磁吸黑色-雙機位鋁合金-雙小燈-收納袋",
         "price": 1256,
         "originalPrice": 1256,
+        "discount": 0,
         "stock": 294,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mgyte4l9qxak2e",
@@ -1452,6 +1554,7 @@
         "value": "磁吸黑色-雙機位鋁合金-雙大燈-收納袋",
         "price": 1396,
         "originalPrice": 1396,
+        "discount": 0,
         "stock": 283,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mgyte77rncwf19",
@@ -1464,6 +1567,7 @@
         "value": "黑色-180CM四腳架-雙燈-收納袋",
         "price": 770,
         "originalPrice": 770,
+        "discount": 0,
         "stock": 296,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r991-lx27bw15wz6u69",
@@ -1476,6 +1580,7 @@
         "value": "黑色-180CM四腳架-無燈-收納袋",
         "price": 580,
         "originalPrice": 580,
+        "discount": 0,
         "stock": 271,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98y-lx274rzszj1i33",
@@ -1488,6 +1593,7 @@
         "value": "黑色-180CM四腳架-雙大燈-收納袋",
         "price": 1078,
         "originalPrice": 1078,
+        "discount": 0,
         "stock": 200,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mpiu3l6umu4r99",
@@ -1500,26 +1606,29 @@
         "value": "磁吸黑色-雙機位鋁合金-無燈-收納袋",
         "price": 1116,
         "originalPrice": 1116,
+        "discount": 0,
         "stock": 271,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mgyte3sntez0ae",
         "link": "https://shopee.tw/product/596688391/25953040400?variationId=320110416291"
       }
-    ]
+    ],
+    "active": true,
+    "position": 13
   },
   {
     "id": "TR-25909362486",
-    "sourceProductId": "25909362486",
     "name": "鋁合金 四腳自拍棒 自拍神器 三腳自拍棒 充電式藍牙遙控器美顏燈 180CM手機腳架 手持自拍桿 相機腳架 旋轉雲台穩定",
-    "category": "????",
-    "sourceCategory": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
+    "display_name": "180cm 美顏燈四腳自拍棒",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 599,
-    "originalPrice": 599,
-    "badge": "TR ??",
-    "desc": "遙控器型號：T12\nNCC認證字號：CCAJ24LP5790T9\n購物須知：\n🛍下單金額需要滿50元（不含運費的50元）才會出貨。\n🛍賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n🛍下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n🛍本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n🛍鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n🛍遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n🛍因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n🛍請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n🛍用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
+    "original_price": 599,
+    "badge": "TR 精選",
+    "description": "遙控器型號：T12\nNCC認證字號：CCAJ24LP5790T9\n購物須知：\n🛍下單金額需要滿50元（不含運費的50元）才會出貨。\n🛍賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n🛍下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n🛍本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n🛍鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n🛍遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n🛍因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n🛍請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n🛍用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "25909362486",
+    "source_category": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mldbx2hraxok5d",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-meo26ope8ohz80",
@@ -1531,7 +1640,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-meo26or291xj48",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-meo26oqxkhs35c"
     ],
-    "detailImages": [],
+    "detail_images": [],
     "videos": [],
     "variants": [
       {
@@ -1541,6 +1650,7 @@
         "value": "黑色-鋁合金 一鍵打開四腳架-雙大燈",
         "price": 998,
         "originalPrice": 998,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-meo281r1z4sib5",
@@ -1553,6 +1663,7 @@
         "value": "變焦款人臉跟拍 1.8米腳架-無燈",
         "price": 1000,
         "originalPrice": 1000,
+        "discount": 0,
         "stock": 196,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mnz5kqdwb4lfbd",
@@ -1565,6 +1676,7 @@
         "value": "黑色-不銹鋼 一鍵打開四腳架-雙大燈",
         "price": 899,
         "originalPrice": 899,
+        "discount": 0,
         "stock": 185,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-meo27pm54ufbbd",
@@ -1577,6 +1689,7 @@
         "value": "粉色-不銹鋼 一鍵打開四腳架-雙小燈",
         "price": 699,
         "originalPrice": 699,
+        "discount": 0,
         "stock": 200,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mesbcars3if9d8",
@@ -1589,6 +1702,7 @@
         "value": "磁吸雙機位1.8m人脸跟拍四腳架-雙小燈",
         "price": 1000,
         "originalPrice": 1000,
+        "discount": 0,
         "stock": 200,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mnxz1egnmqrm37",
@@ -1601,6 +1715,7 @@
         "value": "變焦款人臉跟拍 1.8米腳架-雙大燈",
         "price": 1000,
         "originalPrice": 1000,
+        "discount": 0,
         "stock": 199,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mnz5ll8sxam8d6",
@@ -1613,6 +1728,7 @@
         "value": "變焦款人臉跟拍 1.8米腳架-雙小燈",
         "price": 1000,
         "originalPrice": 1000,
+        "discount": 0,
         "stock": 198,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mnz5lc5pgykha8",
@@ -1625,6 +1741,7 @@
         "value": "黑色-鋁合金 一鍵打開四腳架-無燈",
         "price": 718,
         "originalPrice": 718,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-meo27wbp0oav29",
@@ -1637,6 +1754,7 @@
         "value": "黑色-不銹鋼 一鍵打開四腳架-無燈",
         "price": 599,
         "originalPrice": 599,
+        "discount": 0,
         "stock": 72,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-meo27lsx0cg658",
@@ -1649,6 +1767,7 @@
         "value": "磁吸雙機位1.8m人脸跟拍四腳架-無燈",
         "price": 1000,
         "originalPrice": 1000,
+        "discount": 0,
         "stock": 196,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mnxz0jp9h3b70c",
@@ -1661,6 +1780,7 @@
         "value": "黑色-不銹鋼 一鍵打開四腳架-雙小燈",
         "price": 699,
         "originalPrice": 699,
+        "discount": 0,
         "stock": 178,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-meo27ntnkqv590",
@@ -1673,6 +1793,7 @@
         "value": "黑色-鋁合金 一鍵打開四腳架-雙小燈",
         "price": 818,
         "originalPrice": 818,
+        "discount": 0,
         "stock": 1,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-meo27xrx77r57a",
@@ -1685,6 +1806,7 @@
         "value": "磁吸雙機位1.8m人脸跟拍四腳架-雙大燈",
         "price": 1000,
         "originalPrice": 1000,
+        "discount": 0,
         "stock": 188,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mnxz1krj8tty23",
@@ -1697,6 +1819,7 @@
         "value": "黑色-鋁合金四腳架+正方形磁吸燈",
         "price": 1176,
         "originalPrice": 1176,
+        "discount": 0,
         "stock": 197,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-meo27aez3pq988",
@@ -1709,6 +1832,7 @@
         "value": "粉色-不銹鋼 一鍵打開四腳架-無燈",
         "price": 599,
         "originalPrice": 599,
+        "discount": 0,
         "stock": 185,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mesbc874vnd2f9",
@@ -1721,59 +1845,29 @@
         "value": "粉色-不銹鋼 一鍵打開四腳架-雙大燈",
         "price": 899,
         "originalPrice": 899,
+        "discount": 0,
         "stock": 198,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zte-mesbccu58b9ca1",
         "link": "https://shopee.tw/product/596688391/25909362486?variationId=291608793074"
       }
-    ]
-  },
-  {
-    "id": "TR-25719911986",
-    "sourceProductId": "25719911986",
-    "name": "TRbest售後補寄換貨退貨補寄發票連結",
-    "category": "????",
-    "sourceCategory": "100077 - Mobile & Gadgets/Others",
-    "brand": "TR.tw",
-    "price": 1,
-    "originalPrice": 1,
-    "badge": "TR ??",
-    "desc": "TRbest售後補寄換貨退貨補寄發票連結",
-    "mark": "TR",
-    "parentSku": "",
-    "images": [
-      "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98v-lt3bxe1u6502aa"
     ],
-    "detailImages": [],
-    "videos": [],
-    "variants": [
-      {
-        "id": "TRVAR-255508347805",
-        "sku": "TR-25719911986-1",
-        "name": "??",
-        "value": "????",
-        "price": 1,
-        "originalPrice": 1,
-        "stock": 9883,
-        "leadTime": "1",
-        "image": "",
-        "link": "https://shopee.tw/product/596688391/25719911986?variationId=255508347805"
-      }
-    ]
+    "active": true,
+    "position": 14
   },
   {
     "id": "TR-25707731457",
-    "sourceProductId": "25707731457",
     "name": "專業級領夾式麥克風 DSP降噪 無線直播麥克風 無線領夾麥克風 採訪麥 教師用麥克風 全方位收音 手機相機筆電小蜜蜂音箱",
-    "category": "????",
-    "sourceCategory": "100580 - Audio/Microphones",
+    "display_name": "DSP 降噪無線領夾麥克風",
+    "category": "收音設備",
     "brand": "TR.tw",
     "price": 1118,
-    "originalPrice": 1118,
-    "badge": "TR ??",
-    "desc": "麥克風類型：領夾式麥克風，直播專用麥克風，教師用麥克風\n指向功能：完整的監聽功能，混響，降噪，藍牙\n適用的移動端口：type-c，iOS\n藍牙版本：5.1\n信號與噪聲比：≥70dB\n頻率響應範圍：20Hz-20kHz\n無線電距離：80m\n電池壽命：18小時\n內置電池：250mAh\n充電時間：2H\n響應頻率：20Hz-20κηZ\n即插即用：從充電盒中卸下麥克風，它將自動啟動並無縫連接。 無需藍牙或應用。 可以將無線麥克風夾在衣領上\nAI3.0，用於美化人聲，支持藍牙，耳機插孔和移動卡拉OK\n與99％的設備兼容，用於攝像機，手機，相機，筆電，聲卡，錄音筆，混合控制台和其他設備\n雙向監聽，錄音和偵聽，可調節發射器和接收器，均具有3.5mm接口，實時耳返，記錄",
+    "original_price": 1118,
+    "badge": "TR 精選",
+    "description": "麥克風類型：領夾式麥克風，直播專用麥克風，教師用麥克風\n指向功能：完整的監聽功能，混響，降噪，藍牙\n適用的移動端口：type-c，iOS\n藍牙版本：5.1\n信號與噪聲比：≥70dB\n頻率響應範圍：20Hz-20kHz\n無線電距離：80m\n電池壽命：18小時\n內置電池：250mAh\n充電時間：2H\n響應頻率：20Hz-20κηZ\n即插即用：從充電盒中卸下麥克風，它將自動啟動並無縫連接。 無需藍牙或應用。 可以將無線麥克風夾在衣領上\nAI3.0，用於美化人聲，支持藍牙，耳機插孔和移動卡拉OK\n與99％的設備兼容，用於攝像機，手機，相機，筆電，聲卡，錄音筆，混合控制台和其他設備\n雙向監聽，錄音和偵聽，可調節發射器和接收器，均具有3.5mm接口，實時耳返，記錄",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "25707731457",
+    "source_category": "100580 - Audio/Microphones",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98s-lqcr5zsc1ivsd3",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r991-lqcr5zsc8jq032",
@@ -1785,7 +1879,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98p-lqcr5zsc9yag78",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98t-lqcr5zscbcuwde"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7r98y-lp23hxbv4f1z53",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7r98x-lp23hxen0d4j55",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7r98y-lp23hxe2zrsj6b",
@@ -1806,6 +1900,7 @@
         "value": "一拖一 麥克風-蘋果lighting",
         "price": 1318,
         "originalPrice": 1318,
+        "discount": 0,
         "stock": 50,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98t-lqcr5zscfkk873",
@@ -1818,6 +1913,7 @@
         "value": "一拖二 麥克風-type-c蘋果15",
         "price": 1718,
         "originalPrice": 1718,
+        "discount": 0,
         "stock": 50,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98p-lqcr8jgrvqagbd",
@@ -1830,6 +1926,7 @@
         "value": "一拖二 麥克風-蘋果lighting",
         "price": 1918,
         "originalPrice": 1918,
+        "discount": 0,
         "stock": 50,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98p-lqcr8jgrx4uwdf",
@@ -1842,26 +1939,29 @@
         "value": "一拖一 麥克風-type-c蘋果15",
         "price": 1118,
         "originalPrice": 1118,
+        "discount": 0,
         "stock": 50,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98x-lqcr5zsce5zscf",
         "link": "https://shopee.tw/product/596688391/25707731457?variationId=118278904973"
       }
-    ]
+    ],
+    "active": true,
+    "position": 15
   },
   {
     "id": "TR-25603173393",
-    "sourceProductId": "25603173393",
     "name": "專業級 磁吸無線領夾麥克風 手機相機筆電小蜜蜂音箱  ASMR麥克風 三芯片降噪 領夾麥克風 網紅直播麥克風 教師麥克風",
-    "category": "????",
-    "sourceCategory": "100580 - Audio/Microphones",
+    "display_name": "三晶片降噪磁吸領夾麥克風",
+    "category": "收音設備",
     "brand": "TR.tw",
     "price": 798,
-    "originalPrice": 798,
-    "badge": "TR ??",
-    "desc": "型號：J6 NCC認證字號：CCAJ25LP5990T2",
+    "original_price": 798,
+    "badge": "TR 精選",
+    "description": "型號：J6 NCC認證字號：CCAJ25LP5990T2",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "25603173393",
+    "source_category": "100580 - Audio/Microphones",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mefftd3kdate14",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-mefe1jiogt8n96",
@@ -1873,7 +1973,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mefe3cvpb4e91f",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mefe3faf6a6a19"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztj-mefe9c5lnchu92",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztm-mefe9c5lor2ac2",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-81ztq-mefe9c5lq5mq57",
@@ -1896,6 +1996,7 @@
         "value": "J6-通用型+充電倉",
         "price": 1100,
         "originalPrice": 1100,
+        "discount": 0,
         "stock": 41,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7ra0l-mcvh0iffrv27bf",
@@ -1908,6 +2009,7 @@
         "value": "無充電倉-1對1",
         "price": 798,
         "originalPrice": 798,
+        "discount": 0,
         "stock": 35,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztl-mgn54sbz4he256",
@@ -1920,30 +2022,33 @@
         "value": "無充電倉-1對2",
         "price": 1198,
         "originalPrice": 1198,
+        "discount": 0,
         "stock": 135,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztn-mgn54u25hu6ke7",
         "link": "https://shopee.tw/product/596688391/25603173393?variationId=345069817956"
       }
-    ]
+    ],
+    "active": true,
+    "position": 16
   },
   {
     "id": "TR-25166580960",
-    "sourceProductId": "25166580960",
     "name": "領夾麥克風接收器專用type-c 轉換micro USB轉換頭 單獨購買不出貨",
-    "category": "????",
-    "sourceCategory": "100584 - Audio/Others",
+    "display_name": "Type-C to Micro USB 麥克風轉接頭",
+    "category": "收音設備",
     "brand": "TR.tw",
     "price": 160,
-    "originalPrice": 160,
-    "badge": "TR ??",
-    "desc": "領夾麥克風接收器專用type-c 轉換micro USB轉換頭 單獨購買不出貨\n此商品單獨購買不出貨喔\n僅適用於本賣場出售的麥克風",
+    "original_price": 160,
+    "badge": "TR 精選",
+    "description": "領夾麥克風接收器專用type-c 轉換micro USB轉換頭 單獨購買不出貨\n此商品單獨購買不出貨喔\n僅適用於本賣場出售的麥克風",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "25166580960",
+    "source_category": "100584 - Audio/Others",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98q-ltyvqorew649de"
     ],
-    "detailImages": [],
+    "detail_images": [],
     "videos": [],
     "variants": [
       {
@@ -1953,6 +2058,7 @@
         "value": "type-c轉MICRO",
         "price": 160,
         "originalPrice": 160,
+        "discount": 0,
         "stock": 63,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98p-lsgiz4jxgz60d2",
@@ -1965,6 +2071,7 @@
         "value": "type-c轉USB",
         "price": 160,
         "originalPrice": 160,
+        "discount": 0,
         "stock": 45,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98x-lsgiz4jxidqgfc",
@@ -1977,26 +2084,29 @@
         "value": "3.5mm轉換6.5mm",
         "price": 160,
         "originalPrice": 160,
+        "discount": 0,
         "stock": 71,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98w-lw2k046hy146b9",
         "link": "https://shopee.tw/product/596688391/25166580960?variationId=79428232235"
       }
-    ]
+    ],
+    "active": true,
+    "position": 17
   },
   {
     "id": "TR-25034418645",
-    "sourceProductId": "25034418645",
     "name": "台北現貨 LED柔性補光燈 攝影補光燈 網紅直播美顏燈 拍攝打光燈 方形柔光燈 高亮度打光燈 全面補光燈 亮度顏色可調節",
-    "category": "????",
-    "sourceCategory": "100276 - Mobile & Gadgets/Accessories/Mobile Flashes & Selfie Lights",
+    "display_name": "LED 柔性直播補光燈",
+    "category": "補光設備",
     "brand": "TR.tw",
     "price": 399,
-    "originalPrice": 399,
-    "badge": "TR ??",
-    "desc": "購物須知：\n下單金額需要滿50元（不含運費的50元）才會出貨。\n賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
+    "original_price": 399,
+    "badge": "TR 精選",
+    "description": "購物須知：\n下單金額需要滿50元（不含運費的50元）才會出貨。\n賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "25034418645",
+    "source_category": "100276 - Mobile & Gadgets/Accessories/Mobile Flashes & Selfie Lights",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r990-lynjq49poye636",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98y-lylzeddaqsj8c0",
@@ -2008,7 +2118,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98q-lylzeddurdwe62",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r990-lylzeddkrsima6"
     ],
-    "detailImages": [],
+    "detail_images": [],
     "videos": [],
     "variants": [
       {
@@ -2018,6 +2128,7 @@
         "value": "新款黑色-180CM四腳架-收納袋-無燈",
         "price": 888,
         "originalPrice": 888,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98v-lylzo88vfab8c9",
@@ -2030,6 +2141,7 @@
         "value": "10寸高亮補光燈",
         "price": 399,
         "originalPrice": 399,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98y-lylzo4cr5qlw73",
@@ -2042,26 +2154,29 @@
         "value": "新款粉色-180CM四腳架-收納袋-無燈",
         "price": 888,
         "originalPrice": 888,
+        "discount": 0,
         "stock": 100,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98s-lylzo66sfp5qdb",
         "link": "https://shopee.tw/product/596688391/25034418645?variationId=187702868609"
       }
-    ]
+    ],
+    "active": true,
+    "position": 18
   },
   {
     "id": "TR-25026442730",
-    "sourceProductId": "25026442730",
     "name": "新款180CM自拍神器 手機四腳自拍棒 相機腳架 手持三腳架 藍牙無線自拍棒 自拍桿腳架 充電藍牙遙控器 一鍵打開腳架",
-    "category": "????",
-    "sourceCategory": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
+    "display_name": "180cm 一鍵開腳四腳自拍棒",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 1078,
-    "originalPrice": 1078,
-    "badge": "TR ??",
-    "desc": "購物須知：\n下單金額需要滿50元（不含運費的50元）才會出貨。\n賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
+    "original_price": 1078,
+    "badge": "TR 精選",
+    "description": "購物須知：\n下單金額需要滿50元（不含運費的50元）才會出貨。\n賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "25026442730",
+    "source_category": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mh5y04sg9ix7c5",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r990-luikurslkm46ac",
@@ -2073,7 +2188,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98u-luikurslrmyece",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98x-luikurslug3a82"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7r98t-luil1dhlp2ob1d",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7r98o-luil1dhlqh8r0b",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7r98q-luil1dhlrvt724",
@@ -2096,6 +2211,7 @@
         "value": "磁吸黑色-雙機位鋁合金-無燈-收納袋",
         "price": 1116,
         "originalPrice": 1116,
+        "discount": 0,
         "stock": 298,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztj-mgyte3sntez0ae",
@@ -2108,6 +2224,7 @@
         "value": "磁吸黑色-雙機位鋁合金-雙小燈-收納袋",
         "price": 1256,
         "originalPrice": 1256,
+        "discount": 0,
         "stock": 299,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztm-mgyte4l9qxak2e",
@@ -2120,6 +2237,7 @@
         "value": "磁吸黑色-雙機位鋁合金-雙大燈-收納袋",
         "price": 1396,
         "originalPrice": 1396,
+        "discount": 0,
         "stock": 297,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztp-mgyte77rncwf19",
@@ -2132,6 +2250,7 @@
         "value": "黑色-180CM四腳架-無燈-收納袋",
         "price": 1099,
         "originalPrice": 1099,
+        "discount": 0,
         "stock": 294,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98y-lun8pw4q5ed2d0",
@@ -2144,6 +2263,7 @@
         "value": "黑色-180CM四腳架-雙燈-收納袋",
         "price": 1199,
         "originalPrice": 1199,
+        "discount": 0,
         "stock": 298,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98q-lun8pw4q6sxi99",
@@ -2156,26 +2276,29 @@
         "value": "黑色-180CM四腳架-雙大燈-收納袋",
         "price": 1078,
         "originalPrice": 1078,
+        "discount": 0,
         "stock": 200,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lc-mpiu3l6umu4r99",
         "link": "https://shopee.tw/product/596688391/25026442730?variationId=361065694777"
       }
-    ]
+    ],
+    "active": true,
+    "position": 19
   },
   {
     "id": "TR-24753051489",
-    "sourceProductId": "24753051489",
     "name": "170CM自拍棒 自拍神器 手機自拍棒三腳架 手持自拍棒 手機三腳架 直播手機支架 附手持雲台 藍牙遙控器 補光燈",
-    "category": "????",
-    "sourceCategory": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
+    "display_name": "170cm 藍牙補光自拍腳架",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 570,
-    "originalPrice": 570,
-    "badge": "TR ??",
-    "desc": "購物須知：\n🛍下單金額需要滿50元（不含運費的50元）才會出貨。\n🛍賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n🛍下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n🛍本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n🛍鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n🛍遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n🛍因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n🛍請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n🛍用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
+    "original_price": 570,
+    "badge": "TR 精選",
+    "description": "購物須知：\n🛍下單金額需要滿50元（不含運費的50元）才會出貨。\n🛍賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n🛍下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n🛍本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n🛍鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n🛍遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n🛍因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n🛍請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n🛍用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "24753051489",
+    "source_category": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztg-mgn3vdn54zygd4",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztf-mgn3vw7emgp633",
@@ -2187,7 +2310,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zti-mgn3vw78xdsd07",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztc-mgn3vw7cim1b2d"
     ],
-    "detailImages": [],
+    "detail_images": [],
     "videos": [],
     "variants": [
       {
@@ -2197,6 +2320,7 @@
         "value": "七鍵遙控黑色-170cm三腳架-雙大燈",
         "price": 878,
         "originalPrice": 878,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81ztq-me8djazrwnwnd1",
@@ -2209,6 +2333,7 @@
         "value": "七鍵遙控紫色-170cm三腳架-雙燈",
         "price": 770,
         "originalPrice": 770,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbk8-m6gbcog0wns225",
@@ -2221,6 +2346,7 @@
         "value": "七鍵遙控粉色-170cm三腳架-無燈",
         "price": 570,
         "originalPrice": 570,
+        "discount": 0,
         "stock": 484,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasj-m4se22ytveie83",
@@ -2233,6 +2359,7 @@
         "value": "七鍵遙控粉色-170cm三腳架-雙大燈",
         "price": 878,
         "originalPrice": 878,
+        "discount": 0,
         "stock": 492,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-81zth-me8djcrd1hjb81",
@@ -2245,6 +2372,7 @@
         "value": "七鍵遙控黑色-170cm三腳架-雙燈",
         "price": 770,
         "originalPrice": 770,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasj-m4se2e8rde3a44",
@@ -2257,6 +2385,7 @@
         "value": "七鍵遙控紫色-170cm三腳架-雙大燈",
         "price": 878,
         "originalPrice": 878,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l7-mpitp8u6lh5758",
@@ -2269,6 +2398,7 @@
         "value": "七鍵遙控粉色-170cm三腳架-雙燈",
         "price": 770,
         "originalPrice": 770,
+        "discount": 0,
         "stock": 493,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasf-m4se2csbi43aed",
@@ -2281,6 +2411,7 @@
         "value": "七鍵遙控黑色-170cm三腳架-無燈",
         "price": 570,
         "originalPrice": 570,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rasl-m4se20tp5x1y72",
@@ -2293,26 +2424,29 @@
         "value": "七鍵遙控紫色-170cm三腳架-無燈",
         "price": 570,
         "originalPrice": 570,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7rbk0-m6gbcku66owo01",
         "link": "https://shopee.tw/product/596688391/24753051489?variationId=237394237870"
       }
-    ]
+    ],
+    "active": true,
+    "position": 20
   },
   {
     "id": "TR-24506704190",
-    "sourceProductId": "24506704190",
     "name": "三合一領夾式麥克風 網紅領夾麥克風 防風罩麥克風 一對二收音麥克風 采訪收音麥克風 直播麥克風 安卓iPhone音箱適用",
-    "category": "????",
-    "sourceCategory": "100580 - Audio/Microphones",
+    "display_name": "三合一雙人無線領夾麥克風",
+    "category": "收音設備",
     "brand": "TR.tw",
     "price": 800,
-    "originalPrice": 800,
-    "badge": "TR ??",
-    "desc": "三合一領夾式麥克風 網紅領夾麥克風 防風罩麥克風 一對二收音麥克風 采訪收音麥克風 直播麥克風 安卓iPhone音箱適用",
+    "original_price": 800,
+    "badge": "TR 精選",
+    "description": "三合一領夾式麥克風 網紅領夾麥克風 防風罩麥克風 一對二收音麥克風 采訪收音麥克風 直播麥克風 安卓iPhone音箱適用",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "24506704190",
+    "source_category": "100580 - Audio/Microphones",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98t-lsqdhbka2rrc26",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98u-lq4geq1en3eq48",
@@ -2324,7 +2458,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98s-lq4geq1de58i07",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98p-lq4geq1dgydeb4"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7r991-lq4gsziwsbuq0b",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7r98u-lq4gszivxfcyea",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7r98v-lq4gsziwcvlu46",
@@ -2343,6 +2477,7 @@
         "value": "三合一 一對二",
         "price": 1000,
         "originalPrice": 1000,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98q-lq4geq1djriaeb",
@@ -2355,26 +2490,29 @@
         "value": "三合一 一對一",
         "price": 800,
         "originalPrice": 800,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98p-lq4geq1dicxu89",
         "link": "https://shopee.tw/product/596688391/24506704190?variationId=217254839379"
       }
-    ]
+    ],
+    "active": true,
+    "position": 21
   },
   {
     "id": "TR-23964294120",
-    "sourceProductId": "23964294120",
     "name": "紐扣型領夾式麥克風 磁吸領夾麥克風 ASMR吃播麥克風 網紅麥克風 採訪麥克風 360°全方位收音 蘋果安卓二合一麥克風",
-    "category": "????",
-    "sourceCategory": "100580 - Audio/Microphones",
+    "display_name": "磁吸紐扣型領夾麥克風",
+    "category": "收音設備",
     "brand": "TR.tw",
     "price": 1798,
-    "originalPrice": 1798,
-    "badge": "TR ??",
-    "desc": "購物須知：\n下單金額需要滿50元（不含運費的50元）才會出貨。\n賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
+    "original_price": 1798,
+    "badge": "TR 精選",
+    "description": "購物須知：\n下單金額需要滿50元（不含運費的50元）才會出貨。\n賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "23964294120",
+    "source_category": "100580 - Audio/Microphones",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98t-ly1zhcz7eb00c4",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98r-lwplww49hyqu98",
@@ -2386,7 +2524,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98q-lwplww492ihy66",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98u-lwplww4890dsa2"
     ],
-    "detailImages": [],
+    "detail_images": [],
     "videos": [],
     "variants": [
       {
@@ -2396,6 +2534,7 @@
         "value": "數顯-安卓蘋果通用-磁吸領夾麥克風",
         "price": 1898,
         "originalPrice": 1898,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98o-lyoqz18gti4415",
@@ -2408,26 +2547,29 @@
         "value": "無數顯-安卓蘋果通用-磁吸領夾麥克風",
         "price": 1798,
         "originalPrice": 1798,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98o-lyoqyy11iexq58",
         "link": "https://shopee.tw/product/596688391/23964294120?variationId=197594348684"
       }
-    ]
+    ],
+    "active": true,
+    "position": 22
   },
   {
     "id": "TR-23689869022",
-    "sourceProductId": "23689869022",
     "name": "磁吸人臉追蹤自拍棒 四腳伸縮自拍棒 自拍神器 180CM手機三腳架 手持自拍桿 人像追蹤跟拍雲臺 藍牙遙控器 相機腳架",
-    "category": "????",
-    "sourceCategory": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
+    "display_name": "180cm AI 人臉追蹤自拍腳架",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 2000,
-    "originalPrice": 2000,
-    "badge": "TR ??",
-    "desc": "自動臉部追蹤四腳架自拍棒1800MM  移動雲台穩定三腳架360° 支架4腿自拍棒帶雙LED 燈自動面部跟踪藍牙控制7 按鈕四腳架\n🤗 🤗 🤗🤗 🤗\n包裝內容：1X 升級款自動面部追蹤四腳架🤗 1X 充電多功能藍牙遙控器1 根USB Type-C 充電線1X 使用說明書\n產品型號：自動人臉追蹤四腳架\n可展開長度：32cm - 1.8m\n可用手機尺寸：4.7-7 吋\n最大承重：500g\n主要材質： 鋁合金&ABS塑膠\n支援系統：Android、IOS、HarmonyOS\n電池容量（設備）：1000mAh\n折疊尺寸：38*70*321mm\n淨重：531克\n可用距離（人臉追蹤）：3-5m\n有效距離（遙控器）：5-10m\n電池容量（遙控器）：55mAh\n電池容量（ 補光）：80mAh 待機時間（（遠端控制））：30天\n工作溫度：-20~60C°\n工作電壓：3.6-4.2V\n充電電壓：直流5V",
+    "original_price": 2000,
+    "badge": "TR 精選",
+    "description": "自動臉部追蹤四腳架自拍棒1800MM  移動雲台穩定三腳架360° 支架4腿自拍棒帶雙LED 燈自動面部跟踪藍牙控制7 按鈕四腳架\n🤗 🤗 🤗🤗 🤗\n包裝內容：1X 升級款自動面部追蹤四腳架🤗 1X 充電多功能藍牙遙控器1 根USB Type-C 充電線1X 使用說明書\n產品型號：自動人臉追蹤四腳架\n可展開長度：32cm - 1.8m\n可用手機尺寸：4.7-7 吋\n最大承重：500g\n主要材質： 鋁合金&ABS塑膠\n支援系統：Android、IOS、HarmonyOS\n電池容量（設備）：1000mAh\n折疊尺寸：38*70*321mm\n淨重：531克\n可用距離（人臉追蹤）：3-5m\n有效距離（遙控器）：5-10m\n電池容量（遙控器）：55mAh\n電池容量（ 補光）：80mAh 待機時間（（遠端控制））：30天\n工作溫度：-20~60C°\n工作電壓：3.6-4.2V\n充電電壓：直流5V",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "23689869022",
+    "source_category": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820ld-mny09telf5s0f8",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mny09wht7xu08d",
@@ -2439,7 +2581,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lb-mny09wl8ioead0",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mny09wmw0sg6bc"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820l4-mny0a8i00paa63",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-820lh-mny0a8j86s5d20"
     ],
@@ -2452,6 +2594,7 @@
         "value": "變焦遙控器跟拍四腳架-雙小燈",
         "price": 2000,
         "originalPrice": 2000,
+        "discount": 0,
         "stock": 200,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l4-mnz5lc5pgykha8",
@@ -2464,6 +2607,7 @@
         "value": "變焦遙控器跟拍四腳架-雙大燈",
         "price": 2000,
         "originalPrice": 2000,
+        "discount": 0,
         "stock": 194,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lg-mnz5ll8sxam8d6",
@@ -2476,6 +2620,7 @@
         "value": "磁吸雙機位180cm跟拍四腳架-無燈",
         "price": 2000,
         "originalPrice": 2000,
+        "discount": 0,
         "stock": 94,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820la-mnxz0jp9h3b70c",
@@ -2488,6 +2633,7 @@
         "value": "磁吸雙機位180cm跟拍四腳架-雙小燈",
         "price": 2000,
         "originalPrice": 2000,
+        "discount": 0,
         "stock": 99,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820le-mnxz1egnmqrm37",
@@ -2500,6 +2646,7 @@
         "value": "磁吸雙機位180cm跟拍四腳架-雙大燈",
         "price": 2000,
         "originalPrice": 2000,
+        "discount": 0,
         "stock": 94,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820lh-mnxz1krj8tty23",
@@ -2512,26 +2659,29 @@
         "value": "變焦遙控器跟拍四腳架-無燈",
         "price": 2000,
         "originalPrice": 2000,
+        "discount": 0,
         "stock": 200,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-820l6-mnz5kqdwb4lfbd",
         "link": "https://shopee.tw/product/596688391/23689869022?variationId=208831983816"
       }
-    ]
+    ],
+    "active": true,
+    "position": 23
   },
   {
     "id": "TR-22988077996",
-    "sourceProductId": "22988077996",
     "name": "專業級領夾式麥克風 無線直播麥克風 無線領夾麥克風 採訪麥 8小時續航 DSP降噪 2.4G 全方位收音 蘋果 安卓",
-    "category": "????",
-    "sourceCategory": "100580 - Audio/Microphones",
+    "display_name": "8 小時續航 DSP 無線麥克風",
+    "category": "收音設備",
     "brand": "TR.tw",
     "price": 990,
-    "originalPrice": 990,
-    "badge": "TR ??",
-    "desc": "購物須知：\n🛍下單金額需要滿50元（不含運費的50元）才會出貨。\n🛍賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n🛍下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n🛍本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n🛍鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n🛍遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n🛍因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n🛍請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n🛍用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~\n產品介紹：",
+    "original_price": 990,
+    "badge": "TR 精選",
+    "description": "購物須知：\n🛍下單金額需要滿50元（不含運費的50元）才會出貨。\n🛍賣場商品均有現貨，急單麻煩聊聊諮詢客服，但無法指定時間保證送達唷~\n🛍下標請再三確認商品尺寸和規格，因個人原因導致的換貨運費需要自行承擔喔。\n🛍本店適用七天鑑賞期，如有相關疑問，請聊聊洽詢客服。\n🛍鑑賞期并非試用期，若經拆封、使用導致商品缺乏完整性，恕不提供退換貨。\n🛍遇到商品有問題可以透過聊聊留下訊息，我們會第一時間安排為您妥善處理\n🛍因每天諮詢人數過多且蝦皮平臺偶有漏通知，絶非小店客服故意不回，漏回信息煩請見諒，感謝您耐心等待\n🛍請不要用評價溝通，如未經溝通直接給予一二星負評者，小店將不再為您提供任何服務。\n🛍用評價威脅或態度不好的買家，系統將會識別并拉黑名單，全部平台均封鎖。請珍惜個人評分和注重操守喔~\n產品介紹：",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "22988077996",
+    "source_category": "100580 - Audio/Microphones",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98s-lp4m44xilhf7e8",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98x-lp4m44xqlfubdf",
@@ -2542,7 +2692,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98o-lp4m44xqimpf88",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r991-lp4m44xqpnjnbc"
     ],
-    "detailImages": [],
+    "detail_images": [],
     "videos": [],
     "variants": [
       {
@@ -2552,6 +2702,7 @@
         "value": "type-c安卓/蘋果15用-一拖一",
         "price": 990,
         "originalPrice": 990,
+        "discount": 0,
         "stock": 50,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98y-lp4m44xqsgoj46",
@@ -2564,6 +2715,7 @@
         "value": "iOS蘋果用-一拖一",
         "price": 1020,
         "originalPrice": 1020,
+        "discount": 0,
         "stock": 50,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98w-lp4m44xqtv8z5d",
@@ -2576,6 +2728,7 @@
         "value": "type-c安卓/蘋果15用-一拖二",
         "price": 1700,
         "originalPrice": 1700,
+        "discount": 0,
         "stock": 50,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r991-lp4m44xqv9tfed",
@@ -2588,26 +2741,29 @@
         "value": "iOS蘋果用-一拖二",
         "price": 1900,
         "originalPrice": 1900,
+        "discount": 0,
         "stock": 50,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r991-lp4m44xqy2yb27",
         "link": "https://shopee.tw/product/596688391/22988077996?variationId=217204935010"
       }
-    ]
+    ],
+    "active": true,
+    "position": 24
   },
   {
     "id": "TR-21796263087",
-    "sourceProductId": "21796263087",
     "name": "【台北出貨】單軸穩定器 磁吸可拆式美顏燈 穩定器自拍棒 自拍棒 防抖手機雲台 手機穩定器 雲台穩定器 自拍神器 VLOG",
-    "category": "????",
-    "sourceCategory": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
+    "display_name": "單軸防抖穩定器自拍棒",
+    "category": "自拍腳架",
     "brand": "TR.tw",
     "price": 1198,
-    "originalPrice": 1198,
-    "badge": "TR ??",
-    "desc": "產品尺寸：195x68x44 mm(max length=85.5 cm)\n顏色： 黑  black\n包裝尺寸：  232x92x45 mm\n設備重量：  205 gram\n穩定器電池：400 mah\n材质：ABS+铝合金( Aluminium Alloy)\nAndroid 系統：Android 4.3 以上版本\niOS 系統：iOS 5.1以上版本\n支持手機尺寸：4.0-6.2 inches",
+    "original_price": 1198,
+    "badge": "TR 精選",
+    "description": "產品尺寸：195x68x44 mm(max length=85.5 cm)\n顏色： 黑  black\n包裝尺寸：  232x92x45 mm\n設備重量：  205 gram\n穩定器電池：400 mah\n材质：ABS+铝合金( Aluminium Alloy)\nAndroid 系統：Android 4.3 以上版本\niOS 系統：iOS 5.1以上版本\n支持手機尺寸：4.0-6.2 inches",
     "mark": "TR",
-    "parentSku": "",
+    "source_product_id": "21796263087",
+    "source_category": "100475 - Mobile & Gadgets/Accessories/Selfie Accessories/Selfie Sticks",
     "images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r991-lqsi9vds41qwcf",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r990-lqsi9vdsb2l463",
@@ -2619,7 +2775,7 @@
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r991-lqsi9vds6uvsb6",
       "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98p-lqsi9vdsdvq027"
     ],
-    "detailImages": [
+    "detail_images": [
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7r98p-lokz896na1a29a",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7r98z-lokz896nbfui66",
       "https://s-cf-tw.shopeesz.com/file/tw-11134208-7r991-lokz896ne8zea1",
@@ -2639,6 +2795,7 @@
         "value": "單軸雲台【雙燈】",
         "price": 1598,
         "originalPrice": 1598,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98s-lqsigbgihwpk39",
@@ -2651,6 +2808,7 @@
         "value": "單軸雲台【無燈】",
         "price": 1198,
         "originalPrice": 1198,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98u-lqsi9vdsgouw40",
@@ -2663,38 +2821,14 @@
         "value": "單軸雲台【單燈】",
         "price": 1398,
         "originalPrice": 1398,
+        "discount": 0,
         "stock": 0,
         "leadTime": "1",
         "image": "https://s-cf-tw.shopeesz.com/file/tw-11134207-7r98t-lqsi9vdsi3fc1a",
         "link": "https://shopee.tw/product/596688391/21796263087?variationId=207284257126"
       }
-    ]
+    ],
+    "active": true,
+    "position": 25
   }
-];
-
-  function readProducts() {
-    try {
-      const raw = localStorage.getItem(storageKey);
-      return raw ? JSON.parse(raw) : [];
-    } catch (error) {
-      return [];
-    }
-  }
-
-  function mergeProducts(existingProducts) {
-    const byId = new Map(existingProducts.map((product) => [product.id, product]));
-    importedProducts.forEach((product) => {
-      if (!byId.has(product.id)) byId.set(product.id, product);
-    });
-    return Array.from(byId.values());
-  }
-
-  window.trImportedProducts = importedProducts;
-
-  try {
-    const mergedProducts = mergeProducts(readProducts());
-    localStorage.setItem(storageKey, JSON.stringify(mergedProducts));
-  } catch (error) {
-    console.warn("TR.tw ???????????", error);
-  }
-})();
+]

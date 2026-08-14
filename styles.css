@@ -4278,7 +4278,7 @@ p {
   border-radius: 16px;
   background:
     linear-gradient(90deg, rgba(7, 11, 18, 0.86), rgba(7, 11, 18, 0.12)),
-    url("assets/tripod-rooftop-hero-v2.jpg") center / cover;
+    url("/assets/tripod-rooftop-hero-v2.jpg") center / cover;
 }
 
 .visual-editor-page .preview-hero > div {
@@ -8527,6 +8527,339 @@ summary {
 .reveal-delay-3 { transition-delay: 300ms; }
 .reveal-delay-4 { transition-delay: 400ms; }
 
+/* Next.js dynamic storefront and cloud admin additions */
+.storefront-page .hero-content h1 {
+  white-space: pre-line;
+}
+
+.storefront-page .product-meta {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 9px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.storefront-page .product-body > p:not(.product-meta) {
+  display: -webkit-box;
+  min-height: 40px;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 11px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.storefront-page .wishlist-btn.is-active {
+  color: var(--paper);
+  background: var(--brand);
+}
+
+.cart-backdrop.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cart-item small {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.admin-sidebar .admin-nav-item > a {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr) auto;
+  align-items: center;
+  width: 100%;
+  min-height: 42px;
+  padding: 0 12px;
+  color: inherit;
+  border: 0;
+  background: transparent;
+  font-size: 10px;
+  text-align: left;
+}
+
+.admin-sidebar .admin-nav-item > a:hover,
+.admin-sidebar .admin-nav-item > a.is-active {
+  color: #fff;
+  background: rgba(255,255,255,.08);
+}
+
+.admin-sidebar-footer form button {
+  width: 100%;
+  padding: 12px 0;
+  color: inherit;
+  border: 0;
+  background: transparent;
+  font-size: 10px;
+  text-align: left;
+}
+
+.admin-product-list {
+  max-height: 980px;
+  overflow: auto;
+}
+
+.admin-product-row {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  color: var(--admin-black);
+  border: 0;
+  border-bottom: 1px solid var(--admin-line);
+  background: transparent;
+  text-align: left;
+}
+
+.admin-product-row:hover,
+.admin-product-row.is-active {
+  background: #ededf0;
+}
+
+.admin-product-row > span:not(.admin-product-thumb) {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.admin-product-row strong {
+  overflow: hidden;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.admin-product-row small {
+  color: var(--admin-muted);
+  font-size: 8px;
+}
+
+.admin-product-thumb {
+  display: grid;
+  width: 52px;
+  height: 58px;
+  place-items: center;
+  overflow: hidden;
+  color: #5e625a;
+  background: #e5e5ea;
+  font-size: 10px;
+}
+
+.admin-product-thumb img,
+.admin-media-thumb img,
+.admin-detail-media img,
+.variant-image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-media-thumb {
+  position: relative;
+  min-height: 96px;
+  overflow: hidden;
+  background: #eee;
+}
+
+.admin-media-thumb button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0,0,0,.72);
+}
+
+.admin-detail-media {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid var(--admin-line);
+}
+
+.admin-detail-media img {
+  height: 72px;
+}
+
+.admin-detail-media button,
+.variant-editor-title button {
+  justify-self: end;
+  color: #b42318;
+  border: 0;
+  background: transparent;
+  font-size: 9px;
+}
+
+.admin-checkbox {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-checkbox input {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.admin-inline-upload {
+  min-height: 34px;
+  margin-top: 6px;
+}
+
+.variant-image-preview {
+  display: grid;
+  grid-template-columns: 64px minmax(0,1fr);
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.variant-image-preview img {
+  height: 64px;
+  background: #eee;
+}
+
+.admin-save-status {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--admin-muted);
+  font-size: 10px;
+}
+
+.admin-login-page {
+  display: grid;
+  min-height: 100dvh;
+  padding: 24px;
+  place-items: center;
+  color: #171714;
+  background: #e8e9e3;
+}
+
+.admin-login-card {
+  width: min(460px, 100%);
+  padding: 46px;
+  border: 1px solid #cbcdc5;
+  background: #f8f8f5;
+  box-shadow: 0 28px 80px rgba(31,35,29,.12);
+}
+
+.admin-login-card .admin-brand-box {
+  width: 100%;
+  margin-bottom: 64px;
+  padding: 12px;
+  color: #fff;
+  background: #171714;
+}
+
+.admin-login-card h1 {
+  margin-bottom: 12px;
+  font-family: var(--font-display);
+  font-size: clamp(32px, 6vw, 50px);
+  line-height: .98;
+}
+
+.admin-login-card > p:not(.admin-section-code) {
+  color: #686b64;
+  font-size: 12px;
+}
+
+.admin-login-form {
+  display: grid;
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.admin-login-form label {
+  display: grid;
+  gap: 7px;
+  color: #686b64;
+  font-size: 10px;
+}
+
+.admin-login-form input {
+  height: 46px;
+  padding: 10px 12px;
+  color: #171714;
+  border: 1px solid #cbcdc5;
+  background: #fff;
+}
+
+.admin-login-message {
+  color: #b42318;
+  font-size: 10px;
+}
+
+.admin-login-back {
+  display: inline-block;
+  margin-top: 28px;
+  color: #686b64;
+  font-size: 10px;
+}
+
+.editor-save-bar {
+  position: sticky;
+  bottom: 16px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+  padding: 14px;
+  color: #fff;
+  background: #171714;
+}
+
+.editor-save-bar p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.hero-slide-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0;
+}
+
+.hero-slide-tabs button {
+  padding: 8px 10px;
+  color: #555950;
+  border: 1px solid #d1d3cb;
+  background: #fff;
+  font-size: 9px;
+}
+
+.hero-slide-tabs button.is-active {
+  color: #fff;
+  background: #171714;
+  border-color: #171714;
+}
+
+.editor-inline-settings {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  gap: 12px;
+  align-items: end;
+}
+
+@media (max-width: 780px) {
+  .admin-login-card { padding: 28px; }
+  .editor-inline-settings { grid-template-columns: 1fr; }
+}
+
 /* Enhanced Hero & Atmospheric Ambient Lighting */
 .storefront-page .hero {
   position: relative;
@@ -9277,4 +9610,3 @@ body, html {
   color: #ffffff !important;
   border-color: #0071e3 !important;
 }
-

@@ -1,24 +1,34 @@
-# This workspace contains unrelated reports, design exports, and local tooling.
-# Track only the standalone storefront files listed below.
+# This workspace also contains unrelated business files. Track only this site.
 *
 
 !.gitignore
+!.env.example
 !README.md
-!index.html
-!product.html
-!admin.html
-!visual-editor.html
+!package.json
+!package-lock.json
+!tsconfig.json
+!next-env.d.ts
+!next.config.ts
+!proxy.ts
 !styles.css
-!app.js
-!product.js
-!admin.js
-!visual-editor.js
-!site-content.js
-!tr-products.js
-!catalog-labels.js
 !favicon.svg
 
-!assets/
-assets/*
-!assets/tripod-rooftop-hero-v2.jpg
-!assets/tripod-gesture-detail.jpg
+!app/
+!app/**
+!components/
+!components/**
+!lib/
+!lib/**
+!data/
+!data/default-site-content.json
+!data/seed-products.json
+!public/
+!public/favicon.svg
+!public/assets/
+!public/assets/tripod-rooftop-hero-v2.jpg
+!public/assets/tripod-gesture-detail.jpg
+!scripts/
+!scripts/seed-supabase.mjs
+!supabase/
+!supabase/migrations/
+!supabase/migrations/001_init.sql
